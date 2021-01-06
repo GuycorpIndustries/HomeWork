@@ -108,6 +108,9 @@ body {
   width: 100%;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
+}
+
+.playFwd.content__carrousel {
   -webkit-animation: rotar 15s infinite linear;
           animation: rotar 15s infinite linear;
 }
