@@ -18,10 +18,13 @@
 .content__carrousel{
     width: 100%;
     transform-style: preserve-3d;
-    animation: rotar 15s infinite linear;
     
 }
 
+.playFwd.content__carrousel{
+    animation: rotar 15s infinite linear;
+
+}
 .content__carrousel:hover{
     animation-play-state: paused;
     cursor: pointer;
