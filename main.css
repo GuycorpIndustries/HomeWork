@@ -58,32 +58,20 @@ body {
   margin: calc(1vw + .25rem);
 }
 
+.projects h1 {
+  text-align: center;
+  width: calc(100vw - 2em);
+  margin: auto;
+  font-size: calc(1vw + 1.5rem);
+  margin-bottom: 50px;
+  background-color: black;
+  color: white;
+}
+
 .projects h2 {
   text-align: center;
   font-size: calc(1vw + 1.5rem);
   margin-bottom: 50px;
-}
-
-.projects {
-  color: black;
-}
-
-.projects .project {
-  margin: auto;
-  max-width: 700px;
-  width: calc(100vw - 2em);
-  height: 700px;
-  color: white;
-  border: 1px solid black;
-  border-radius: 2rem;
-  margin-bottom: 25px;
-}
-
-.projects .project h3 {
-  padding: 1rem;
-  text-align: center;
-  background-color: #292929;
-  border-radius: 2rem 2rem 0rem 0rem;
 }
 
 .imgCarrousel {
@@ -91,7 +79,7 @@ body {
   margin: 0 auto;
   padding-top: 50px;
   height: 400px;
-  background-color: skyblue;
+  background-color: black;
   margin-bottom: 50px;
 }
 
@@ -111,8 +99,18 @@ body {
 }
 
 .playFwd.content__carrousel {
-  -webkit-animation: rotar 15s infinite linear;
-          animation: rotar 15s infinite linear;
+  -webkit-animation: rotarF 15s infinite linear;
+          animation: rotarF 15s infinite linear;
+}
+
+.playRwd.content__carrousel {
+  -webkit-animation: rotarR 15s infinite linear;
+          animation: rotarR 15s infinite linear;
+}
+
+.pause.content__carrousel {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
 }
 
 .content__carrousel:hover {
@@ -176,8 +174,8 @@ body {
 
 .shadow {
   position: absolute;
-  -webkit-box-shadow: 0px 0px 20px 0px;
-          box-shadow: 0px 0px 20px 0px;
+  -webkit-box-shadow: 0px 0px 20px 0px white;
+          box-shadow: 0px 0px 20px 0px white;
   border-radius: 2px;
 }
 
@@ -194,7 +192,7 @@ body {
           transform: scale(1.5);
 }
 
-@-webkit-keyframes rotar {
+@-webkit-keyframes rotarF {
   from {
     -webkit-transform: rotateY(0deg);
             transform: rotateY(0deg);
@@ -205,7 +203,7 @@ body {
   }
 }
 
-@keyframes rotar {
+@keyframes rotarF {
   from {
     -webkit-transform: rotateY(0deg);
             transform: rotateY(0deg);
@@ -213,18 +211,75 @@ body {
   to {
     -webkit-transform: rotateY(360deg);
             transform: rotateY(360deg);
+  }
+}
+
+@-webkit-keyframes rotarR {
+  from {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+  to {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+}
+
+@keyframes rotarR {
+  from {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+  to {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
   }
 }
 
 .imgCarrousel .player {
   position: relative;
   top: 230px;
-  text-align: center;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.imgCarrousel .player .player__btn {
+  margin: 0px 20px;
 }
 
 .imgCarrousel .player .player__btn .btn {
-  display: block;
-  width: 100px;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   cursor: pointer;
-  margin: auto;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  border: 2px solid white;
+  color: white;
+}
+
+.imgCarrousel .player .pause .btn {
+  color: black;
+  background-color: rgba(255, 255, 255, 0.5);
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.8);
+          box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.8);
+  border: 2px solid black;
+}
+
+.imgCarrousel .player .stopBtn {
+  font-size: 2rem;
 }
