@@ -49,6 +49,10 @@
         }
 }
 
+
+
+
+
 .devBox{
     background-color: rgb(0, 0, 0);
     height: auto;
@@ -58,7 +62,7 @@
     h2{
         color: white;
         margin-left: 3%;
-        font-size: calc(2vw + 1rem);
+        font-size: calc(1vw + 1.25rem);
         letter-spacing: .1rem;
     }
     &__img{
@@ -67,12 +71,10 @@
         justify-content: center;
         img{
             margin: calc(1vw + .25rem);
-            width: calc(3vw + 4rem);
+            width: calc(5vw + 4rem);
         }
     }
 }
-
-
     .h1Headers{
         margin: auto;
         display: flex;

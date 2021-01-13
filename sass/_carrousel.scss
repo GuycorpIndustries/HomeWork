@@ -1,18 +1,17 @@
 .imgCarrousel{
     width: 95vw;
     margin: 0 auto;
-    padding-top: 50px;
-    height: 400px;
+    height: calc(21vw + 15rem);
     background-color: black;
     margin-bottom: 50px;
+    position: relative;
 }
 
 .imgCarrousel-content{
     margin: auto;
-    width: 190px;
+    width: calc(9vw + 7rem);
     perspective: 1000px;
-    position: relative;
-    padding-top: 80px;
+    padding-top: calc(5vw + 2rem);
 }
 
 .content__carrousel{
@@ -42,52 +41,52 @@
 
 .content__carrousel figure{
     width: 100%;
-    height: 120px;
+    height: calc(5vw + 5.5rem);
     border: 1px solid #4d444d;
     overflow: hidden;
     position: absolute;
 }
 
 .content__carrousel figure:nth-child(1){
-    transform: rotateY(0deg) translateZ(300px);
+    transform: rotateY(0deg) translateZ(calc(14vw + 9rem));
 
 }
 .content__carrousel figure:nth-child(2){
-    transform: rotateY(40deg) translateZ(300px);
+    transform: rotateY(40deg) translateZ(calc(14vw + 9rem));
     
 }
 .content__carrousel figure:nth-child(3){
-    transform: rotateY(80deg) translateZ(300px);
+    transform: rotateY(80deg) translateZ(calc(14vw + 9rem));
     
 }
 .content__carrousel figure:nth-child(4){
-    transform: rotateY(120deg) translateZ(300px);
+    transform: rotateY(120deg) translateZ(calc(14vw + 9rem));
     
 }
 .content__carrousel figure:nth-child(5){
-    transform: rotateY(160deg) translateZ(300px);
+    transform: rotateY(160deg) translateZ(calc(14vw + 9rem));
     
 }
 .content__carrousel figure:nth-child(6){
-    transform: rotateY(200deg) translateZ(300px);
+    transform: rotateY(200deg) translateZ(calc(14vw + 9rem));
     
 }
 .content__carrousel figure:nth-child(7){
-    transform: rotateY(240deg) translateZ(300px);
+    transform: rotateY(240deg) translateZ(calc(14vw + 9rem));
     
 }
 .content__carrousel figure:nth-child(8){
-    transform: rotateY(280deg) translateZ(300px);
+    transform: rotateY(280deg) translateZ(calc(14vw + 9rem));
     
 }
 .content__carrousel figure:nth-child(9){
-    transform: rotateY(320deg) translateZ(300px);
+    transform: rotateY(320deg) translateZ(calc(14vw + 9rem));
     
 }
 
 .shadow{
     position: absolute;
-    box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 1.0);
+    box-shadow: 0px 0px 30px 0px rgba(255, 255, 255, 1.0);
     border-radius: 2px;
 }
 
@@ -97,7 +96,7 @@
     transition: all 300ms;
     width: 100%;
     height: 100%;
-
+    object-fit: cover;
 }
 
 .content__carrousel img:hover{
@@ -123,12 +122,14 @@
 }
 
 .imgCarrousel .player{
-        position: relative;
-        top: 230px;
+        position: absolute;
+        bottom: calc(1vw + 1rem);
         color: white;
         display: flex;
         align-items: center;
         justify-content: center;
+        left: 50%;
+        transform: translateX(-50%);
     .player__btn{
         margin: 0px calc(1vw + .5rem);
         .btn{
