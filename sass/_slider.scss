@@ -1,23 +1,114 @@
+ .imgContainer{
+     position: relative;
+     color: white;
+     background-color: black;
+     width: 95vw;
+     margin: auto;
+     line-height: 1.6;
+     padding: 2rem;
+     border-radius: 1.5rem;
+     box-shadow: 0px 0px 30px black;
+     margin-bottom: 150px;
+}
+
 .imgSlider{
-    width: 95vw;
+    position: relative;
+    overflow: hidden;
     margin: auto;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    background-color: black;
-    margin-bottom: 50px;
-    .imgContainer{
-        width: calc(25vw + 15rem);
-        margin: auto;
-        border: 5px solid white;
-        &__slide{
-            display: flex;
-            height: calc(15vw + 10rem);
-            img{
-                width: 100%;
-                object-fit: cover;
-            }
-        }
+    width: calc(25vw + 15rem);
+    min-height: 450px;
+    border-radius: 1rem;
+}
+
+.slide{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+    background-size: cover;
+}
+
+.slide.current{
+    opacity: 1;
+}
+
+.slide .content{
+    position: absolute;
+    background-color: rgba(255, 255, 255, .6);
+    bottom: 0;
+    left: -700px;
+    width: 100%;
+    
+    opacity: 0;
+    color: #333;
+    padding: calc(.5vw + .1rem);
+    text-overflow: wrap;
+}
+
+.slide .content h2{
+    margin-bottom: 5px;
+}
+
+.slide.current .content{
+    opacity: 1;
+    transform: translateX(700px);
+    transition:  all 0.7s ease-in-out 0.3s;
+}
+
+.slide:first-child{
+    background-image: url('img/chandler-cruttenden-unsplash_img1.jpg');
+}
+.slide:nth-child(2){
+    background-image: url('img/sajad-nori-unsplash_img9.jpg');
+}
+.slide:nth-child(3){
+    background-image: url('img/daniel-sessler-unsplash_img3.jpg');
+}
+.slide:nth-child(4){
+    background-image: url('img/jarrad-horne-c-unsplash_img4.jpg');
+}
+.slide:nth-child(5){
+    background-image: url('img/quaid-lagan-unsplash_img5.jpg');
+}
+.slide:nth-child(6){
+    background-image: url('img/sebastien-jermer-unsplash_img6.jpg');
+}
+.slide:nth-child(7){
+    background-image: url('img/lewis-roberts-unsplash_img7.jpg');
+}
+.buttons {
+    button.btn{
+        position: absolute;
+        outline: none;
+        border: none;
+        top: 50%;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+    }
+    button#prevBtn.btn{
+        left: 20%;
+        clip-path: polygon(50% 0, 25% 50%, 50% 100%, 25% 100%, 0% 50%, 25% 0%);
+    }
+    button#prevBtn.btn:hover{
+        background-color: red;
+    }
+    button#nextBtn{
+        right: 20%;
+        clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 50% 100%, 75% 50%, 50% 0);
+    }
+    button#nextBtn.btn:hover{
+        background-color: red;
     }
 }
 
-
+.project-4{
+    background-image: url('img/daniel-sessler-unsplash_img3.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 50vw;
+    height: 50vh;
+}
