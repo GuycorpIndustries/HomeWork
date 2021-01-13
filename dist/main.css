@@ -107,7 +107,7 @@ body {
   width: calc(3vw + 4rem);
 }
 
-.projects .h1Headers {
+.h1Headers {
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -117,7 +117,7 @@ body {
   width: calc(95vw - 1rem);
 }
 
-.projects .h1Headers .outsideBoxL {
+.h1Headers .outsideBoxL {
   width: calc(2vw + 2.5rem);
   background-color: white;
   -webkit-clip-path: polygon(50% 0%, 75% 50%, 50% 100%, 50% 50%);
@@ -126,7 +126,7 @@ body {
           transform: translateX(-51%);
 }
 
-.projects .h1Headers .chevronL {
+.h1Headers .chevronL {
   background-color: white;
   width: calc(2vw + 2.5rem);
   margin-left: auto;
@@ -134,7 +134,7 @@ body {
           clip-path: polygon(50% 0, 25% 50%, 50% 100%, 25% 100%, 0% 50%, 25% 0%);
 }
 
-.projects .h1Headers .outsideBoxR {
+.h1Headers .outsideBoxR {
   background-color: white;
   width: calc(2vw + 2.5rem);
   -webkit-clip-path: polygon(50% 0%, 50% 50%, 50% 100%, 25% 50%);
@@ -143,7 +143,7 @@ body {
           transform: translateX(51%);
 }
 
-.projects .h1Headers .chevronR {
+.h1Headers .chevronR {
   background-color: white;
   width: calc(2vw + 2.5rem);
   margin-right: auto;
@@ -151,7 +151,7 @@ body {
           clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 50% 100%, 75% 50%, 50% 0);
 }
 
-.projects .h1Headers h1 {
+.h1Headers h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -168,7 +168,7 @@ body {
   color: white;
 }
 
-.projects .h2Headers {
+.h2Headers {
   width: calc(80vw - 2rem);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -182,7 +182,7 @@ body {
   border-radius: .25rem;
 }
 
-.projects .h2Headers .h2-outsideBoxL {
+.h2Headers .h2-outsideBoxL {
   background-color: white;
   width: calc(2vw + 1rem);
   -webkit-clip-path: polygon(50% 0, 25% 50%, 50% 100%, 25% 100%, 0% 50%, 25% 0%);
@@ -191,7 +191,7 @@ body {
           transform: translate(-25%);
 }
 
-.projects .h2Headers .h2-chevronL {
+.h2Headers .h2-chevronL {
   background-color: white;
   width: calc(2vw + 1rem);
   -webkit-clip-path: polygon(50% 0, 25% 50%, 50% 100%, 25% 100%, 0% 50%, 25% 0%);
@@ -200,14 +200,14 @@ body {
           transform: translate(75%);
 }
 
-.projects .h2Headers .h2-midchevronL {
+.h2Headers .h2-midchevronL {
   background-color: white;
   width: calc(2vw + 1rem);
   -webkit-clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 50% 100%, 75% 50%, 50% 0);
           clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 50% 100%, 75% 50%, 50% 0);
 }
 
-.projects .h2Headers .h2-outsideBoxR {
+.h2Headers .h2-outsideBoxR {
   background-color: white;
   width: calc(2vw + 1rem);
   -webkit-clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 50% 100%, 75% 50%, 50% 0);
@@ -216,7 +216,7 @@ body {
           transform: translate(25%);
 }
 
-.projects .h2Headers .h2-chevronR {
+.h2Headers .h2-chevronR {
   background-color: white;
   width: calc(2vw + 1rem);
   -webkit-clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 50% 100%, 75% 50%, 50% 0);
@@ -225,14 +225,14 @@ body {
           transform: translate(-75%);
 }
 
-.projects .h2Headers .h2-midchevronR {
+.h2Headers .h2-midchevronR {
   background-color: white;
   width: calc(2vw + 1rem);
   -webkit-clip-path: polygon(50% 0, 25% 50%, 50% 100%, 25% 100%, 0% 50%, 25% 0%);
           clip-path: polygon(50% 0, 25% 50%, 50% 100%, 25% 100%, 0% 50%, 25% 0%);
 }
 
-.projects .h2Headers h2 {
+.h2Headers h2 {
   font-size: calc(1vw + .75rem);
   padding: 0.25rem calc(1vw + 1rem);
   min-width: 170px;
