@@ -1,9 +1,8 @@
 .header{
     position: relative;
-    background-color: rgb(219, 219, 219);
+    background-color: rgb(255, 255, 255);
     height: 40vh;
     margin-bottom: -7vw;
-    z-index: 10;
     clip-path: polygon(0 0, 100% 0, 100% calc(100% - 7vw), 0 100%);
     h1{
         position: absolute;
@@ -15,17 +14,18 @@
     }
 }
 
-.box{
+
+
+.devBox{
     background-color: rgb(0, 0, 0);
     height: auto;
     padding-top: calc(7vw + 1.5rem);
     padding-bottom: 25px;
-    margin-bottom: calc(1vw + 1.5rem);
+    margin-bottom: calc(2vw + 1.5rem);
     h2{
         color: white;
         margin-left: 3%;
         font-size: calc(1vw + 1.5rem);
-        margin-bottom: 10px;
     }
     &__img{
         display: flex;
@@ -38,20 +38,117 @@
 }
 
 .projects{
-    h1{
-        text-align: center;
-        width: calc(100vw - 2em);
+    .h1Headers{
         margin: auto;
-        font-size: calc(1vw + 1.5rem);
-        margin-bottom: 50px;
+        display: flex;
         background-color: black;
-        color: white;
+        margin-bottom: 75px;
+        width: calc(95vw - 1rem);
+
+        .outsideBoxL{
+            width: calc(2vw + 2.5rem);
+            background-color: white;
+            clip-path: polygon(50% 0%, 75% 50%, 50% 100%, 50% 50%);
+            transform: translateX(-51%);
+        }
+        .chevronL{
+            background-color: white;
+            width: calc(2vw + 2.5rem);
+            margin-left: auto;
+            clip-path: polygon(50% 0, 25% 50%, 50% 100%, 25% 100%, 0% 50%, 25% 0%);
+        }
+        .outsideBoxR{
+            background-color: white;
+            width: calc(2vw + 2.5rem);
+            clip-path: polygon(50% 0%, 50% 50%, 50% 100%, 25% 50%);
+            transform: translateX(51%);
+        }
+        .chevronR{
+            background-color: white;
+            width: calc(2vw + 2.5rem);
+            margin-right: auto;
+            clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 50% 100%, 75% 50%, 50% 0);
+        }
+        h1{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: .5rem calc(1vw + 2rem);
+            margin: auto;
+            font-size: calc(1vw + 1.75rem);
+           
+            color: white;
+        }
     }
-    h2{
-        text-align: center;
-        font-size: calc(1vw + 1.5rem);
+    .h2Headers{
+        width: calc(80vw - 2rem);
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+        background-image: radial-gradient(rgb(240, 240, 240), rgb(150, 150, 150));
         margin-bottom: 50px;
+
+        border-radius: .25rem;
+        .h2-outsideBoxL{
+            background-color: white;
+            width: calc(2vw + 1rem);
+            clip-path: polygon(50% 0, 25% 50%, 50% 100%, 25% 100%, 0% 50%, 25% 0%);
+            transform: translate(-25%);
+        }
+        .h2-chevronL{
+            background-color: white;
+            width: calc(2vw + 1rem);
+            clip-path: polygon(50% 0, 25% 50%, 50% 100%, 25% 100%, 0% 50%, 25% 0%);
+            transform: translate(75%);
+        }
+        .h2-midchevronL{
+            background-color: white;
+            width: calc(2vw + 1rem);
+            clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 50% 100%, 75% 50%, 50% 0);
+        }
+        .h2-outsideBoxR{
+            background-color: white;
+            width: calc(2vw + 1rem);
+            clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 50% 100%, 75% 50%, 50% 0);
+            transform: translate(25%);
+        }
+        .h2-chevronR{
+            background-color: white;
+            width: calc(2vw + 1rem);
+            clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 50% 100%, 75% 50%, 50% 0);
+            transform: translate(-75%);
+        }
+        .h2-midchevronR{
+            background-color: white;
+            width: calc(2vw + 1rem);
+            clip-path: polygon(50% 0, 25% 50%, 50% 100%, 25% 100%, 0% 50%, 25% 0%); 
+        }
+        h2{
+            font-size: calc(1vw + .75rem);
+            padding: .25rem calc(1vw + 1rem);
+            min-width: 160px;
+            text-align: center;
+            
+            
+        }
     }
 }
 
+/*             Right Chevron Thick
+clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
 
+                Right Chevron Thin
+clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 50% 100%, 75% 50%, 50% 0);
+*/
+
+/*             left Chevron Thick
+clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+                Left Chevron Thin
+clip-path: polygon(50% 0, 25% 50%, 50% 100%, 25% 100%, 0% 50%, 25% 0%);
+*/
+
+/*             left Triangle
+clip-path: polygon(50% 0%, 50% 50%, 50% 100%, 0% 50%);
+                Right Triangle
+clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 50% 50%);
+*/
