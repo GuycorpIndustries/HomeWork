@@ -16,6 +16,55 @@ body {
           clip-path: polygon(0 0, 100% 0, 100% calc(100% - 7vw), 0 100%);
 }
 
+.header .navBar__list {
+  margin-top: calc(1vw + .25rem);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .navBar__list .listItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-right: 2px solid black;
+  margin-left: calc(1vw + .3rem);
+}
+
+.header .navBar__list .listItem:last-child {
+  border-right: none;
+}
+
+.header .navBar__list a {
+  margin: 0 calc(1vw + .3rem);
+  display: block;
+  text-decoration: none;
+  font-size: 1.25rem;
+  letter-spacing: .25rem;
+  color: black;
+}
+
+.header a:hover {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+  -webkit-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+}
+
+.header .active {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+  font-weight: 700;
+  text-shadow: 0px 0px 10px #5a5a5a;
+}
+
 .header h1 {
   position: absolute;
   bottom: calc(7vw - .5rem);
@@ -37,7 +86,8 @@ body {
 .devBox h2 {
   color: white;
   margin-left: 3%;
-  font-size: calc(1vw + 1.5rem);
+  font-size: calc(2vw + 1rem);
+  letter-spacing: .1rem;
 }
 
 .devBox__img {
@@ -54,6 +104,7 @@ body {
 
 .devBox__img img {
   margin: calc(1vw + .25rem);
+  width: calc(3vw + 4rem);
 }
 
 .projects .h1Headers {
@@ -113,6 +164,7 @@ body {
   padding: 0.5rem calc(1vw + 2rem);
   margin: auto;
   font-size: calc(1vw + 1.75rem);
+  letter-spacing: .25rem;
   color: white;
 }
 
@@ -183,8 +235,9 @@ body {
 .projects .h2Headers h2 {
   font-size: calc(1vw + .75rem);
   padding: 0.25rem calc(1vw + 1rem);
-  min-width: 160px;
+  min-width: 170px;
   text-align: center;
+  letter-spacing: .1rem;
 }
 
 /*             Right Chevron Thick
