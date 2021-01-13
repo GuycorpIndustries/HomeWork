@@ -68,3 +68,6 @@ stopBtn.addEventListener('click', () => {
         stopped = false;
     }
 });
+
+// Image Slider
+
