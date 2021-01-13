@@ -600,7 +600,7 @@ clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 50% 50%);
   position: absolute;
   background-color: rgba(255, 255, 255, 0.6);
   bottom: 0;
-  left: -700px;
+  bottom: -300px;
   width: 100%;
   opacity: 0;
   color: #333;
@@ -614,8 +614,8 @@ clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 50% 50%);
 
 .slide.current .content {
   opacity: 1;
-  -webkit-transform: translateX(700px);
-          transform: translateX(700px);
+  -webkit-transform: translateY(-300px);
+          transform: translateY(-300px);
   -webkit-transition: all 0.7s ease-in-out 0.3s;
   transition: all 0.7s ease-in-out 0.3s;
 }

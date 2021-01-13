@@ -33,19 +33,20 @@
 
 .slide.current{
     opacity: 1;
+    
 }
 
 .slide .content{
     position: absolute;
     background-color: rgba(255, 255, 255, .6);
     bottom: 0;
-    left: -700px;
+    bottom: -300px;
     width: 100%;
-    
     opacity: 0;
     color: #333;
     padding: calc(.5vw + .1rem);
     text-overflow: wrap;
+
 }
 
 .slide .content h2{
@@ -54,7 +55,7 @@
 
 .slide.current .content{
     opacity: 1;
-    transform: translateX(700px);
+    transform: translateY(-300px);
     transition:  all 0.7s ease-in-out 0.3s;
 }
 
