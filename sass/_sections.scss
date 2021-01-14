@@ -110,132 +110,115 @@
         }
     }
 }
-    .h1Headers{
-        margin: auto;
+
+.h1Headers{
+    margin: auto;
+    display: flex;
+    background-image: var(--radialGradeSecondary);
+    margin-bottom: calc(4vw + 4rem);
+    width: calc(95vw - 1.5rem);
+    height: calc(2.5vw + 2rem);
+    .outsideBoxL{
+        width: calc(2vw + 2.5rem);
+        background-color: var(--secondaryClr);
+        clip-path: polygon(50% 0%, 75% 50%, 50% 100%, 50% 50%);
+        transform: translateX(-51%);
+    }
+    .chevronL{
+        background-color: var(--primaryClrDark);
+        width: calc(2vw + 2.5rem);
+        margin-left: auto;
+        clip-path: polygon(50% 0, 25% 50%, 50% 100%, 25% 100%, 0% 50%, 25% 0%);
+    }
+    .outsideBoxR{
+        background-color: var(--secondaryClr);
+        width: calc(2vw + 2.5rem);
+        clip-path: polygon(50% 0%, 50% 50%, 50% 100%, 25% 50%);
+        transform: translateX(52%);
+    }
+    .chevronR{
+        background-color: var(--primaryClrDark);
+        width: calc(2vw + 2.5rem);
+        margin-right: auto;
+        clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 50% 100%, 75% 50%, 50% 0);
+    }
+    h1{
         display: flex;
-        background-image: var(--radialGradeSecondary);
-        margin-bottom: calc(4vw + 4rem);
-        width: calc(95vw - 1.5rem);
-        height: calc(2.5vw + 2rem);
-        .outsideBoxL{
-            width: calc(2vw + 2.5rem);
-            background-color: var(--secondaryClr);
-            clip-path: polygon(50% 0%, 75% 50%, 50% 100%, 50% 50%);
-            transform: translateX(-51%);
-        }
-        .chevronL{
-            background-color: var(--primaryClrDark);
-            width: calc(2vw + 2.5rem);
-            margin-left: auto;
-            clip-path: polygon(50% 0, 25% 50%, 50% 100%, 25% 100%, 0% 50%, 25% 0%);
-        }
-        .outsideBoxR{
-            background-color: var(--secondaryClr);
-            width: calc(2vw + 2.5rem);
-            clip-path: polygon(50% 0%, 50% 50%, 50% 100%, 25% 50%);
-            transform: translateX(52%);
-        }
-        .chevronR{
-            background-color: var(--primaryClrDark);
-            width: calc(2vw + 2.5rem);
-            margin-right: auto;
-            clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 50% 100%, 75% 50%, 50% 0);
-        }
-        h1{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: .25rem 0;
-            margin: auto;
-            min-width: 250px;
-            font-size: calc(1vw + 1rem);
-            letter-spacing: .25rem;
-            color: var(--primaryClrDark);
-        
-        }
-    }
-
-    .imgCarrousel .h2Headers{
-        width: 90%;
-    }
-    .imgSlider .h2Headers{
-        width: 90%;
-    }
-
-    .imgGallery .h2Headers{
-        width: 90%;
-    }
-    .h2Headers{
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        top: calc(2vw + 2rem);
-        display: flex;
-        justify-content: space-between;
+        align-items: center;
+        justify-content: center;
+        padding: .25rem 0;
         margin: auto;
-        background-image: var(--radialGradeSecondary);
-        margin-bottom: calc(2vw + 2rem);
-        box-shadow: 0px 0px 10px var(--primaryClrDark);
-        .h2-outsideBoxL{
-            background-color: var(--primaryClrDark);
-            width: calc(2vw + 1rem);
-            clip-path: polygon(50% 0, 25% 50%, 50% 100%, 25% 100%, 0% 50%, 25% 0%);
-            transform: translate(-25%);
-        }
-        .h2-chevronL{
-            background-color: var(--primaryClrDark);
-            width: calc(2vw + 1rem);
-            clip-path: polygon(50% 0, 25% 50%, 50% 100%, 25% 100%, 0% 50%, 25% 0%);
-            transform: translate(75%);
-        }
-        .h2-midchevronL{
-            background-color: var(--primaryClrDark);
-            width: calc(2vw + 1rem);
-            clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 50% 100%, 75% 50%, 50% 0);
-        }
-        .h2-outsideBoxR{
-            background-color: var(--primaryClrDark);
-            width: calc(2vw + 1rem);
-            clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 50% 100%, 75% 50%, 50% 0);
-            transform: translate(25%);
-        }
-        .h2-chevronR{
-            background-color: var(--primaryClrDark);
-            width: calc(2vw + 1rem);
-            clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 50% 100%, 75% 50%, 50% 0);
-            transform: translate(-75%);
-        }
-        .h2-midchevronR{
-            background-color: var(--primaryClrDark);
-            width: calc(2vw + 1rem);
-            clip-path: polygon(50% 0, 25% 50%, 50% 100%, 25% 100%, 0% 50%, 25% 0%); 
-        }
-        h2{
-            font-size: calc(1vw + .75rem);
-            padding: .25rem calc(1vw + 1rem);
-            min-width: 170px;
-            text-align: center;
-            letter-spacing: .1rem;
-            color: var(--primaryClrDark);
-        }
+        min-width: 250px;
+        font-size: calc(1vw + 1rem);
+        letter-spacing: .25rem;
+        color: var(--primaryClrDark);
+    
     }
+}
 
-
-/*             Right Chevron Thick
-clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
-
-                Right Chevron Thin
-clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 50% 100%, 75% 50%, 50% 0);
-*/
-
-/*             left Chevron Thick
-clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
-                Left Chevron Thin
-clip-path: polygon(50% 0, 25% 50%, 50% 100%, 25% 100%, 0% 50%, 25% 0%);
-*/
-
-/*             left Triangle
-clip-path: polygon(50% 0%, 50% 50%, 50% 100%, 0% 50%);
-                Right Triangle
-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 50% 50%);
-*/
+.imgCarrousel .h2Headers{
+    width: 90%;
+}
+.imgSlider .h2Headers{
+    width: 90%;
+}
+.imgGallery .h2Headers{
+    width: 90%;
+}
+.imgProductGallery .h2Headers{
+    width: 90%;
+}
+.h2Headers{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: calc(2vw + 2rem);
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    background-image: var(--radialGradeSecondary);
+    margin-bottom: calc(2vw + 2rem);
+    box-shadow: 0px 0px 10px var(--primaryClrDark);
+    .h2-outsideBoxL{
+        background-color: var(--primaryClrDark);
+        width: calc(2vw + 1rem);
+        clip-path: polygon(50% 0, 25% 50%, 50% 100%, 25% 100%, 0% 50%, 25% 0%);
+        transform: translate(-25%);
+    }
+    .h2-chevronL{
+        background-color: var(--primaryClrDark);
+        width: calc(2vw + 1rem);
+        clip-path: polygon(50% 0, 25% 50%, 50% 100%, 25% 100%, 0% 50%, 25% 0%);
+        transform: translate(75%);
+    }
+    .h2-midchevronL{
+        background-color: var(--primaryClrDark);
+        width: calc(2vw + 1rem);
+        clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 50% 100%, 75% 50%, 50% 0);
+    }
+    .h2-outsideBoxR{
+        background-color: var(--primaryClrDark);
+        width: calc(2vw + 1rem);
+        clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 50% 100%, 75% 50%, 50% 0);
+        transform: translate(25%);
+    }
+    .h2-chevronR{
+        background-color: var(--primaryClrDark);
+        width: calc(2vw + 1rem);
+        clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 50% 100%, 75% 50%, 50% 0);
+        transform: translate(-75%);
+    }
+    .h2-midchevronR{
+        background-color: var(--primaryClrDark);
+        width: calc(2vw + 1rem);
+        clip-path: polygon(50% 0, 25% 50%, 50% 100%, 25% 100%, 0% 50%, 25% 0%); 
+    }
+    h2{
+        font-size: calc(1vw + .75rem);
+        padding: .25rem calc(1vw + 1rem);
+        min-width: 170px;
+        text-align: center;
+        letter-spacing: .1rem;
+        color: var(--primaryClrDark);
+    }
+}
