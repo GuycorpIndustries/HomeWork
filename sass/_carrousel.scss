@@ -1,19 +1,19 @@
 .imgCarrousel{
-    width: 95vw;
+    max-width: 900px;
     margin: 0 auto;
-    height: calc(21vw + 15rem);
-    background-color: black;
+    height: calc(20vw + 20rem);
+    background-image: var(--radialGradeSecondary);
     margin-bottom: 150px;
     position: relative;
     border-radius: 1.5rem;
-    box-shadow: 0px 0px 30px black;
+    box-shadow: 0px 0px 30px var(--primaryClrDark);
 }
 
 .imgCarrousel-content{
     margin: auto;
     width: calc(9vw + 7rem);
     perspective: 1000px;
-    padding-top: calc(5vw + 2rem);
+    padding-top: calc(6vw + 6rem);
 }
 
 .content__carrousel{
@@ -44,7 +44,7 @@
 .content__carrousel figure{
     width: 100%;
     height: calc(5vw + 5.5rem);
-    border: 1px solid #4d444d;
+    border: 1px solid var(--primaryClrDark);
     overflow: hidden;
     position: absolute;
 }
@@ -88,7 +88,7 @@
 
 .shadow{
     position: absolute;
-    box-shadow: 0px 0px 30px 0px rgba(255, 255, 255, 1.0);
+    box-shadow: 0px 0px 30px var(--secondaryClr);
     border-radius: 2px;
 }
 
@@ -126,7 +126,6 @@
 .imgCarrousel .player{
         position: absolute;
         bottom: calc(1vw + 1rem);
-        color: white;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -142,15 +141,16 @@
             border-radius: 50%;
             width: 50px;
             height: 50px;
-            border: 2px solid white;
-            color: white;
+            border: 2px solid var(--primaryClrDark);
+            color: var(--primaryClrDark);
         }   
     }    
     .pause{
         .btn{
             transform: scale(1.2);
-            box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, .8);
-            border: 2px solid white;
+            box-shadow: 0px 0px 20px 0px var(--secondaryClrOp);
+            border: 2px solid var(--primaryClrDark);
+            text-shadow: 0px 0px 15px var(--secondaryClr);
         }
     }
     .pauseBtn{
@@ -176,7 +176,7 @@
     .fwd{
         .btn{
             box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, .8);
-            text-shadow: 0px 0px 15px white;
+            text-shadow: 0px 0px 15px var(--secondaryClr);
         }
     }
     .rwdBtn{
@@ -188,12 +188,12 @@
     .rwd{
         .btn{
             box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, .8);
-            text-shadow: 0px 0px 15px white;
+            text-shadow: 0px 0px 15px var(--secondaryClr);
         }
     }
     .stop{
         width: 13px;
         height: 13px;
-        background-color: white;
+        background-color: var(--primaryClrDark);
     }
 }

@@ -9,10 +9,21 @@ body {
   font-family: 'Audiowide', cursive;
 }
 
+:root {
+  --primaryBackground: black;
+  --primaryClrDark: black;
+  --primaryClrMid: grey;
+  --secondaryClr: white;
+  --radialGradePrimary: radial-gradient( rgb(110, 110, 110), rgb(240, 240, 240));
+  --radialGradeSecondary: radial-gradient(rgb(255, 255, 255), rgb(170, 170, 170));
+  --primarClrDarkOp: rgba(0, 0, 0, .8);
+  --secondaryClrOp: rgba(255, 255, 255, 0.6);
+}
+
 .header {
   position: relative;
-  background-color: white;
-  height: 40vh;
+  background-color: var(--secondaryClr);
+  height: 43vh;
   margin-bottom: -7vw;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 7vw), 0 100%);
           clip-path: polygon(0 0, 100% 0, 100% calc(100% - 7vw), 0 100%);
@@ -21,15 +32,14 @@ body {
 .header .headerBackground {
   position: absolute;
   width: 100%;
-  min-width: 700px;
-  opacity: .6;
+  min-width: 750px;
 }
 
 .header .techIcon {
   position: absolute;
-  background-color: rgba(230, 230, 230, 0.4);
-  -webkit-box-shadow: 0px 0px 20px black;
-          box-shadow: 0px 0px 20px black;
+  background-image: var(--radialGradeSecondary);
+  -webkit-box-shadow: 0px 0px 20px var(--primaryClrDark);
+          box-shadow: 0px 0px 20px var(--primaryClrDark);
   border-radius: 1.5rem;
   width: calc(7.25vw + 7.25rem);
   max-width: 225px;
@@ -52,21 +62,22 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  opacity: .8;
 }
 
 .header .techIcon p {
   font-size: calc(.5vw + 1rem);
+  color: var(--primaryClrDark);
+  letter-spacing: .15rem;
+  text-shadow: 0px 0px 10px var(--secondaryClr);
 }
 
 .header .techIcon img {
-  margin: 10px;
+  margin: 7px;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
   width: calc(4vw + 4rem);
   height: calc(4vw + 4rem);
-  -webkit-box-shadow: 0px 0px 10px black;
-          box-shadow: 0px 0px 10px black;
-  border-radius: 50%;
 }
 
 .header .navBar__list {
@@ -85,7 +96,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border-right: 2px solid black;
+  border-right: 2px solid var(--primaryClrDark);
   margin-left: calc(1vw + .3rem);
 }
 
@@ -97,9 +108,9 @@ body {
   margin: 0 calc(1vw + .3rem);
   display: block;
   text-decoration: none;
-  font-size: 1.25rem;
+  font-size: calc(.75vw + 1rem);
   letter-spacing: .25rem;
-  color: black;
+  color: var(--primaryClrDark);
 }
 
 .header a:hover {
@@ -113,7 +124,7 @@ body {
   -webkit-transform: scale(1.15);
           transform: scale(1.15);
   font-weight: 700;
-  text-shadow: 0px 0px 10px #5a5a5a;
+  text-shadow: 0px 0px 10px var(--primaryClrDark);
 }
 
 .header h1 {
@@ -122,12 +133,13 @@ body {
   right: 5%;
   -webkit-transform: rotate(-3.8deg);
           transform: rotate(-3.8deg);
-  font-size: calc(2.5vw + 1.25rem);
+  font-size: calc(1.75vw + 1.75rem);
   font-family: 'Audiowide', cursive;
+  color: var(--primaryClrDark);
 }
 
 .devBox {
-  background-color: black;
+  background-image: var(--radialGradeSecondary);
   height: auto;
   padding-top: calc(7vw + 1.5rem);
   padding-bottom: 25px;
@@ -135,10 +147,11 @@ body {
 }
 
 .devBox h2 {
-  color: white;
+  color: var(--primaryClrDark);
   margin-left: 3%;
   font-size: calc(1vw + 1.25rem);
   letter-spacing: .1rem;
+  text-shadow: 0px 0px 10px var(--secondaryClr);
 }
 
 .devBox__img {
@@ -163,14 +176,15 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: black;
+  background-image: var(--radialGradeSecondary);
   margin-bottom: 75px;
   width: calc(95vw - 1rem);
+  height: calc(2.5vw + 2rem);
 }
 
 .h1Headers .outsideBoxL {
   width: calc(2vw + 2.5rem);
-  background-color: white;
+  background-color: var(--secondaryClr);
   -webkit-clip-path: polygon(50% 0%, 75% 50%, 50% 100%, 50% 50%);
           clip-path: polygon(50% 0%, 75% 50%, 50% 100%, 50% 50%);
   -webkit-transform: translateX(-51%);
@@ -178,7 +192,7 @@ body {
 }
 
 .h1Headers .chevronL {
-  background-color: white;
+  background-color: var(--secondaryClr);
   width: calc(2vw + 2.5rem);
   margin-left: auto;
   -webkit-clip-path: polygon(50% 0, 25% 50%, 50% 100%, 25% 100%, 0% 50%, 25% 0%);
@@ -186,7 +200,7 @@ body {
 }
 
 .h1Headers .outsideBoxR {
-  background-color: white;
+  background-color: var(--secondaryClr);
   width: calc(2vw + 2.5rem);
   -webkit-clip-path: polygon(50% 0%, 50% 50%, 50% 100%, 25% 50%);
           clip-path: polygon(50% 0%, 50% 50%, 50% 100%, 25% 50%);
@@ -195,7 +209,7 @@ body {
 }
 
 .h1Headers .chevronR {
-  background-color: white;
+  background-color: var(--secondaryClr);
   width: calc(2vw + 2.5rem);
   margin-right: auto;
   -webkit-clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 50% 100%, 75% 50%, 50% 0);
@@ -212,15 +226,32 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 0.5rem calc(1vw + 2rem);
+  padding: .25rem 0;
   margin: auto;
-  font-size: calc(1vw + 1.75rem);
+  min-width: 250px;
+  font-size: calc(1vw + 1rem);
   letter-spacing: .25rem;
-  color: white;
+  color: var(--primaryClrDark);
+}
+
+.imgCarrousel .h2Headers {
+  width: 90%;
+}
+
+.imgSlider .h2Headers {
+  width: 90%;
+}
+
+.imgGallery .h2Headers {
+  width: 90%;
 }
 
 .h2Headers {
-  width: calc(80vw - 2rem);
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: calc(2vw + 2rem);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -228,13 +259,14 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: auto;
-  background-image: radial-gradient(#f0f0f0, #969696);
-  margin-bottom: 50px;
-  border-radius: .25rem;
+  background-image: var(--radialGradeSecondary);
+  margin-bottom: calc(2vw + 2rem);
+  -webkit-box-shadow: 0px 0px 10px var(--primaryClrDark);
+          box-shadow: 0px 0px 10px var(--primaryClrDark);
 }
 
 .h2Headers .h2-outsideBoxL {
-  background-color: white;
+  background-color: var(--primaryClrDark);
   width: calc(2vw + 1rem);
   -webkit-clip-path: polygon(50% 0, 25% 50%, 50% 100%, 25% 100%, 0% 50%, 25% 0%);
           clip-path: polygon(50% 0, 25% 50%, 50% 100%, 25% 100%, 0% 50%, 25% 0%);
@@ -243,7 +275,7 @@ body {
 }
 
 .h2Headers .h2-chevronL {
-  background-color: white;
+  background-color: var(--primaryClrDark);
   width: calc(2vw + 1rem);
   -webkit-clip-path: polygon(50% 0, 25% 50%, 50% 100%, 25% 100%, 0% 50%, 25% 0%);
           clip-path: polygon(50% 0, 25% 50%, 50% 100%, 25% 100%, 0% 50%, 25% 0%);
@@ -252,14 +284,14 @@ body {
 }
 
 .h2Headers .h2-midchevronL {
-  background-color: white;
+  background-color: var(--primaryClrDark);
   width: calc(2vw + 1rem);
   -webkit-clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 50% 100%, 75% 50%, 50% 0);
           clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 50% 100%, 75% 50%, 50% 0);
 }
 
 .h2Headers .h2-outsideBoxR {
-  background-color: white;
+  background-color: var(--primaryClrDark);
   width: calc(2vw + 1rem);
   -webkit-clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 50% 100%, 75% 50%, 50% 0);
           clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 50% 100%, 75% 50%, 50% 0);
@@ -268,7 +300,7 @@ body {
 }
 
 .h2Headers .h2-chevronR {
-  background-color: white;
+  background-color: var(--primaryClrDark);
   width: calc(2vw + 1rem);
   -webkit-clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 50% 100%, 75% 50%, 50% 0);
           clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 50% 100%, 75% 50%, 50% 0);
@@ -277,7 +309,7 @@ body {
 }
 
 .h2Headers .h2-midchevronR {
-  background-color: white;
+  background-color: var(--primaryClrDark);
   width: calc(2vw + 1rem);
   -webkit-clip-path: polygon(50% 0, 25% 50%, 50% 100%, 25% 100%, 0% 50%, 25% 0%);
           clip-path: polygon(50% 0, 25% 50%, 50% 100%, 25% 100%, 0% 50%, 25% 0%);
@@ -289,6 +321,7 @@ body {
   min-width: 170px;
   text-align: center;
   letter-spacing: .1rem;
+  color: var(--primaryClrDark);
 }
 
 /*             Right Chevron Thick
@@ -308,15 +341,15 @@ clip-path: polygon(50% 0%, 50% 50%, 50% 100%, 0% 50%);
 clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 50% 50%);
 */
 .imgCarrousel {
-  width: 95vw;
+  max-width: 900px;
   margin: 0 auto;
-  height: calc(21vw + 15rem);
-  background-color: black;
+  height: calc(20vw + 20rem);
+  background-image: var(--radialGradeSecondary);
   margin-bottom: 150px;
   position: relative;
   border-radius: 1.5rem;
-  -webkit-box-shadow: 0px 0px 30px black;
-          box-shadow: 0px 0px 30px black;
+  -webkit-box-shadow: 0px 0px 30px var(--primaryClrDark);
+          box-shadow: 0px 0px 30px var(--primaryClrDark);
 }
 
 .imgCarrousel-content {
@@ -324,7 +357,7 @@ clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 50% 50%);
   width: calc(9vw + 7rem);
   -webkit-perspective: 1000px;
           perspective: 1000px;
-  padding-top: calc(5vw + 2rem);
+  padding-top: calc(6vw + 6rem);
 }
 
 .content__carrousel {
@@ -357,7 +390,7 @@ clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 50% 50%);
 .content__carrousel figure {
   width: 100%;
   height: calc(5vw + 5.5rem);
-  border: 1px solid #4d444d;
+  border: 1px solid var(--primaryClrDark);
   overflow: hidden;
   position: absolute;
 }
@@ -409,8 +442,8 @@ clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 50% 50%);
 
 .shadow {
   position: absolute;
-  -webkit-box-shadow: 0px 0px 30px 0px white;
-          box-shadow: 0px 0px 30px 0px white;
+  -webkit-box-shadow: 0px 0px 30px var(--secondaryClr);
+          box-shadow: 0px 0px 30px var(--secondaryClr);
   border-radius: 2px;
 }
 
@@ -476,7 +509,6 @@ clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 50% 50%);
 .imgCarrousel .player {
   position: absolute;
   bottom: calc(1vw + 1rem);
-  color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -508,16 +540,17 @@ clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 50% 50%);
   border-radius: 50%;
   width: 50px;
   height: 50px;
-  border: 2px solid white;
-  color: white;
+  border: 2px solid var(--primaryClrDark);
+  color: var(--primaryClrDark);
 }
 
 .imgCarrousel .player .pause .btn {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
-  -webkit-box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.8);
-          box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.8);
-  border: 2px solid white;
+  -webkit-box-shadow: 0px 0px 20px 0px var(--secondaryClrOp);
+          box-shadow: 0px 0px 20px 0px var(--secondaryClrOp);
+  border: 2px solid var(--primaryClrDark);
+  text-shadow: 0px 0px 15px var(--secondaryClr);
 }
 
 .imgCarrousel .player .pauseBtn .btn {
@@ -538,7 +571,7 @@ clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 50% 50%);
 .imgCarrousel .player .fwd .btn {
   -webkit-box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.8);
           box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.8);
-  text-shadow: 0px 0px 15px white;
+  text-shadow: 0px 0px 15px var(--secondaryClr);
 }
 
 .imgCarrousel .player .rwdBtn .btn {
@@ -548,36 +581,39 @@ clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 50% 50%);
 .imgCarrousel .player .rwd .btn {
   -webkit-box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.8);
           box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.8);
-  text-shadow: 0px 0px 15px white;
+  text-shadow: 0px 0px 15px var(--secondaryClr);
 }
 
 .imgCarrousel .player .stop {
   width: 13px;
   height: 13px;
-  background-color: white;
-}
-
-.imgContainer {
-  position: relative;
-  color: white;
-  background-color: black;
-  width: 95vw;
-  margin: auto;
-  line-height: 1.6;
-  padding: 2rem;
-  border-radius: 1.5rem;
-  -webkit-box-shadow: 0px 0px 30px black;
-          box-shadow: 0px 0px 30px black;
-  margin-bottom: 150px;
+  background-color: var(--primaryClrDark);
 }
 
 .imgSlider {
   position: relative;
+  background-image: var(--radialGradeSecondary);
+  max-width: 900px;
+  margin: 0 auto;
+  line-height: 1.6;
+  border-radius: 1.5rem;
+  -webkit-box-shadow: 0px 0px 30px var(--primaryClrDark);
+          box-shadow: 0px 0px 30px var(--primaryClrDark);
+  margin-bottom: 150px;
+  height: calc(22vw + 22rem);
+}
+
+.imgContainer {
+  position: absolute;
+  top: calc(5vw + 5rem);
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   overflow: hidden;
   margin: auto;
   width: calc(25vw + 15rem);
-  min-height: 450px;
   border-radius: 1rem;
+  height: calc(15vw + 15rem);
 }
 
 .slide {
@@ -598,12 +634,12 @@ clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 50% 50%);
 
 .slide .content {
   position: absolute;
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: var(--secondaryClrOp);
   bottom: 0;
   bottom: -300px;
   width: 100%;
   opacity: 0;
-  color: #333;
+  color: var(--primaryClrDark);
   padding: calc(.5vw + .1rem);
   text-overflow: wrap;
 }
@@ -656,26 +692,29 @@ clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 50% 50%);
   width: 50px;
   height: 50px;
   cursor: pointer;
+  background-color: var(--primaryClrDark);
 }
 
 .buttons button#prevBtn.btn {
-  left: 20%;
+  left: 2%;
   -webkit-clip-path: polygon(50% 0, 25% 50%, 50% 100%, 25% 100%, 0% 50%, 25% 0%);
           clip-path: polygon(50% 0, 25% 50%, 50% 100%, 25% 100%, 0% 50%, 25% 0%);
 }
 
 .buttons button#prevBtn.btn:hover {
-  background-color: red;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .buttons button#nextBtn {
-  right: 20%;
+  right: 2%;
   -webkit-clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 50% 100%, 75% 50%, 50% 0);
           clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 50% 100%, 75% 50%, 50% 0);
 }
 
 .buttons button#nextBtn.btn:hover {
-  background-color: red;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .project-4 {
@@ -684,4 +723,16 @@ clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 50% 50%);
   background-position: center;
   width: 50vw;
   height: 50vh;
+}
+
+.imgGallery {
+  position: relative;
+  max-width: 900px;
+  background-image: Var(--radialGradeSecondary);
+  margin: 0 auto;
+  -webkit-box-shadow: 0px 0px 30px var(--primaryClrDark);
+          box-shadow: 0px 0px 30px var(--primaryClrDark);
+  margin-bottom: 150px;
+  height: calc(22vw + 22rem);
+  border-radius: 1.5rem;
 }
