@@ -1,7 +1,7 @@
  .imgSlider{
      position: relative;
      background-image: var(--radialGradeSecondary);
-     max-width: 1200px;
+     max-width: 900px;
      margin: 0 auto;
      line-height: 1.6;
      border-radius: 1.5rem;
@@ -109,10 +109,3 @@
     }
 }
 
-.project-4{
-    background-image: url('img/daniel-sessler-unsplash_img3.jpg');
-    background-size: cover;
-    background-position: center;
-    width: 50vw;
-    height: 50vh;
-}

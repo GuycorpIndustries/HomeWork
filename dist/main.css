@@ -20,6 +20,28 @@ body {
   --secondaryClrOp: rgba(255, 255, 255, 0.6);
 }
 
+.project-3 {
+  background-image: url("img/Anorei_Collins_img_1.jpg");
+  background-size: cover;
+  background-position: center;
+  max-width: 1200px;
+  height: calc(30vw + 30rem);
+  margin: auto;
+  margin-bottom: 150px;
+  border-radius: 1.5rem;
+}
+
+.project-4 {
+  background-image: url("img/Anorei_Collins_img_7.jpg");
+  background-size: cover;
+  background-position: center;
+  max-width: 1200px;
+  height: calc(30vw + 30rem);
+  margin: auto;
+  margin-bottom: 150px;
+  border-radius: 1.5rem;
+}
+
 .header {
   position: relative;
   background-color: var(--secondaryClr);
@@ -341,7 +363,7 @@ clip-path: polygon(50% 0%, 50% 50%, 50% 100%, 0% 50%);
 clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 50% 50%);
 */
 .imgCarrousel {
-  max-width: 1200px;
+  max-width: 900px;
   margin: 0 auto;
   height: calc(22vw + 22rem);
   background-image: var(--radialGradeSecondary);
@@ -593,7 +615,7 @@ clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 50% 50%);
 .imgSlider {
   position: relative;
   background-image: var(--radialGradeSecondary);
-  max-width: 1200px;
+  max-width: 900px;
   margin: 0 auto;
   line-height: 1.6;
   border-radius: 1.5rem;
@@ -717,17 +739,9 @@ clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 50% 50%);
           transform: scale(1.2);
 }
 
-.project-4 {
-  background-image: url("img/daniel-sessler-unsplash_img3.jpg");
-  background-size: cover;
-  background-position: center;
-  width: 50vw;
-  height: 50vh;
-}
-
 .imgGallery {
   position: relative;
-  max-width: 1200px;
+  max-width: 900px;
   background-image: Var(--radialGradeSecondary);
   margin: 0 auto;
   -webkit-box-shadow: 0px 0px 30px var(--primaryClrDark);
