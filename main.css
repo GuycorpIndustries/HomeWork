@@ -268,6 +268,10 @@ body {
   width: 90%;
 }
 
+.imgProductGallery .h2Headers {
+  width: 90%;
+}
+
 .h2Headers {
   position: absolute;
   left: 50%;
@@ -346,22 +350,6 @@ body {
   color: var(--primaryClrDark);
 }
 
-/*             Right Chevron Thick
-clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
-
-                Right Chevron Thin
-clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 50% 100%, 75% 50%, 50% 0);
-*/
-/*             left Chevron Thick
-clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
-                Left Chevron Thin
-clip-path: polygon(50% 0, 25% 50%, 50% 100%, 25% 100%, 0% 50%, 25% 0%);
-*/
-/*             left Triangle
-clip-path: polygon(50% 0%, 50% 50%, 50% 100%, 0% 50%);
-                Right Triangle
-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 50% 50%);
-*/
 .imgCarrousel {
   max-width: 900px;
   margin: 0 auto;
@@ -740,6 +728,7 @@ clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 50% 50%);
 }
 
 .imgGallery {
+  position: relative;
   max-width: 900px;
   background-image: Var(--radialGradeSecondary);
   -webkit-box-shadow: 0px 0px 30px var(--primaryClrDark);
@@ -779,3 +768,96 @@ clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 50% 50%);
   -webkit-animation: fadeIn 0.5s ease-in 1 forwards;
           animation: fadeIn 0.5s ease-in 1 forwards;
 }
+
+.imgProductGallery {
+  position: relative;
+  max-width: 900px;
+  background-image: Var(--radialGradeSecondary);
+  -webkit-box-shadow: 0px 0px 30px var(--primaryClrDark);
+          box-shadow: 0px 0px 30px var(--primaryClrDark);
+  margin: 0 auto;
+  margin-bottom: 150px;
+  border-radius: 1.5rem;
+}
+
+.productSlider {
+  padding: 2rem;
+}
+
+.productFeatureImg img {
+  width: 100%;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.productContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 500px;
+  min-height: 100px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.productImgs {
+  width: 450px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  overflow: hidden;
+}
+
+.productImg {
+  width: 150px;
+  height: 100px;
+  border-radius: .5rem;
+  cursor: pointer;
+  opacity: .4;
+}
+
+.productImg:hover {
+  opacity: 1;
+}
+
+.activeProduct {
+  opacity: 1;
+}
+
+.btnL {
+  position: absolute;
+  background-color: var(--primaryClrDark);
+  width: 50px;
+  height: 50px;
+  -webkit-clip-path: polygon(50% 0, 25% 50%, 50% 100%, 25% 100%, 0% 50%, 25% 0%);
+          clip-path: polygon(50% 0, 25% 50%, 50% 100%, 25% 100%, 0% 50%, 25% 0%);
+}
+
+.btnR {
+  position: absolute;
+  background-color: var(--primaryClrDark);
+  width: 50px;
+  height: 50px;
+  -webkit-clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 50% 100%, 75% 50%, 50% 0);
+          clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 50% 100%, 75% 50%, 50% 0);
+}
+
+/*             Right Chevron Thick
+clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+
+                Right Chevron Thin
+clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 50% 100%, 75% 50%, 50% 0);
+*/
+/*             left Chevron Thick
+clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+                Left Chevron Thin
+clip-path: polygon(50% 0, 25% 50%, 50% 100%, 25% 100%, 0% 50%, 25% 0%);
+*/
+/*             left Triangle
+clip-path: polygon(50% 0%, 50% 50%, 50% 100%, 0% 50%);
+                Right Triangle
+clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 50% 50%);
+*/
