@@ -341,9 +341,9 @@ clip-path: polygon(50% 0%, 50% 50%, 50% 100%, 0% 50%);
 clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 50% 50%);
 */
 .imgCarrousel {
-  max-width: 900px;
+  max-width: 1200px;
   margin: 0 auto;
-  height: calc(20vw + 20rem);
+  height: calc(22vw + 22rem);
   background-image: var(--radialGradeSecondary);
   margin-bottom: 150px;
   position: relative;
@@ -593,7 +593,7 @@ clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 50% 50%);
 .imgSlider {
   position: relative;
   background-image: var(--radialGradeSecondary);
-  max-width: 900px;
+  max-width: 1200px;
   margin: 0 auto;
   line-height: 1.6;
   border-radius: 1.5rem;
