@@ -18,16 +18,7 @@ body{
     --primarClrDarkOp: rgba(0, 0, 0, .8);
     --secondaryClrOp: rgba(255, 255, 255, 0.6);
 }
-.project-3{
-    background-image: url('img/Anorei_Collins_img_9.jpg');
-    background-size: cover;
-    background-position: center;
-    max-width: 1200px;
-    height: calc(30vw + 30rem);
-    margin: auto;
-    margin-bottom: 150px;
-    border-radius: 1.5rem;
-}
+
 .project-4{
     background-image: url('img/Anorei_Collins_img_7.jpg');
     background-size: cover;
@@ -38,6 +29,7 @@ body{
     margin-bottom: 150px;
     border-radius: 1.5rem;
 }
+
 @import"sections";
 @import"carrousel";
 @import"slider";
