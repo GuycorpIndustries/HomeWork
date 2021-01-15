@@ -161,3 +161,14 @@ for (var i=0; i < productImgs.length; i++){
     })
 }
 
+const buttonLeft = document.getElementById('btnL');
+const buttonRight = document.getElementById('btnR');
+
+buttonLeft.addEventListener('click', function(){
+    document.getElementById('productImgs').scrollLeft -= 160
+})
+
+buttonRight.addEventListener('click', function () {
+    document.getElementById('productImgs').scrollLeft += 160
+    
+})
