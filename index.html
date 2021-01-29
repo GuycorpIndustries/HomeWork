@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,289 +8,39 @@
     <link rel="shortcut icon" type="image/png" href="img/favicon2.jpg">
     <link rel="stylesheet" href="main.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Montserrat:wght@400;700&display=swap"
+        rel="stylesheet">
     <script defer src="main.js"></script>
 </head>
+
 <body>
     <header class="header">
-        <img class="headerBackground" src="img/download_2.png" alt="">
-        <div class="logo" >
-            <p class="logoTop">Guycorp</p>
-            <div class="analogClock__face">
-              <div class="hand hour-hand" data-hour-hand></div>
-              <div class="hand minute-hand" data-minute-hand></div>
-              <div class="hand second-hand" data-second-hand></div>
-              <div class="number number1">I</div>
-              <div class="number number2">I</div>
-              <div class="number number3">|</div>
-              <div class="number number4">I</div>
-              <div class="number number5">I</div>
-              <div class="number number6">|</div>
-              <div class="number number7">I</div>
-              <div class="number number8">I</div>
-              <div class="number number9">|</div>
-              <div class="number number10">I</div>
-              <div class="number number11">I</div>
-              <div class="number number12">|</div>
-          </div>       
-            <p class="logoBottom">Industries</p>
-        </div>
-        <nav class="navBar">
-            <ul class="navBar__list">
-                <li class="listItem"><a href="https://guycorpindustries.github.io/Portfolio/">Home</a></li>
-                <li class="listItem active"><a href="#">Projects</a></li>
-                <li class="listItem"><a href="">About</a></li>
-            </ul>
-        </nav>
-        <h1>Christopher T. Guy</h1>
-    </header>
-    <main>
-        <section class="devBox">
-            <h2>Front End Web Developer</h2>
-            <div class="devBox__img">
-                <img src="img/HTML5_logo.svg.png" alt="HTML Logo" width="100px" >
+        <section class="banner">
+            <div class="logo-bar__img">
+                <img src="img/HTML5_logo.svg.png" alt="HTML Logo" width="100px">
                 <img src="img/CSS.3b.svg.png" alt="CSS Logo" width="71px">
                 <img src="img/sass-1.svg" alt="" width="110px">
-                <img src="img/javascript-1.svg.png" alt="javaScript Logo" width="90px">
+                <img src="img/Javascript-logo.svg.png" alt="javaScript Logo" width="90px">
+            </div>
+            <div class="logo">
+                <div class="techIcon">
+                    <p class="techIconTop">Guycorp</p>
+                    <img src="img/icon-blk-tech.png" alt="">
+                    <p class="techIconBottom">Industries</p>
+                </div>
+                <h1 class="h1Name">Christopher T. Guy</h1>
+            </div>
+            <div class="nav__bar">
+                <ul class="navList">
+                    <li><a href="#mainHeader">Home</a></li>
+                </ul>
             </div>
         </section>
+    </header>
+    <section class="sectionTitle">
+        <h2>Projects</h2>
+    </section>
 
-
-        <div class="profile">
-            <div class="img-box">
-                <img class="img-box__img" src="img/profile_img.jpg" alt="Christopher Guy">
-            </div>
-            <div class="contact-box">
-                <div class="contact-box__btn">Contact Me</div>
-            </div>
-        </div>
-        <br>
-        <div class="h1Headers">
-            <div class="outsideBoxL"></div>
-            <div class="chevronL"></div>
-            <div class="chevronL"></div>
-            <h1>Image Projects</h1>
-            <div class="chevronR"></div>
-            <div class="chevronR"></div>
-            <div class="outsideBoxR"></div>
-        </div>
-        <button>Show</button>
-        <Section class="imgCarrousel">
-                <div class="h2Headers">
-                    
-                    <h2>Image Carousel</h2>
-                   
-                </div>
-                <div class="imgCarrousel-content">
-                    <div class="content__carrousel imgAnimation">
-                        <figure class="shadow">
-                            <img src="img/chandler-cruttenden-unsplash_img1.jpg" alt="Anorei Collins">
-                            <figcaption>
-                                Photo by Chandler Cruttenden
-                            </figcaption>
-                        </figure>
-                        <figure class="shadow">
-                            <img src="img/laura-chouette-unsplash_img2.jpg" alt="Anorei Collins">
-                            <figcaption>
-                                Photo by Laura Chouette
-                            </figcaption>
-                        </figure>
-                        <figure class="shadow">
-                            <img src="img/daniel-sessler-unsplash_img3.jpg" alt="Anorei Collins">
-                            <figcaption>
-                                Photo by Daniel Sessler
-                            </figcaption>
-                        </figure>
-                        <figure class="shadow">
-                            <img src="img/jarrad-horne-c-unsplash_img4.jpg" alt="Anorei Collins">
-                            <figcaption>
-                                Photo by Jarrad Horne
-                            </figcaption>
-                        </figure>
-                        <figure class="shadow">
-                            <img src="img/quaid-lagan-unsplash_img5.jpg" alt="Anorei Collins">
-                            <figcaption>
-                                Photo by Quaid Lagan
-                            </figcaption>
-                        </figure>
-                        <figure class="shadow">
-                            <img src="img/sebastien-jermer-unsplash_img6.jpg" alt="Anorei Collins">
-                            <figcaption>
-                                Photo by Sebastien Jermer
-                            </figcaption>
-                        </figure>
-                        <figure class="shadow">
-                            <img src="img/lewis-roberts-unsplash_img7.jpg" alt="Anorei Collins">
-                            <figcaption>
-                                Photo by Lewis Roberts
-                            </figcaption>
-                        </figure>
-                        <figure class="shadow">
-                            <img src="img/nicolas-i-unsplash_img8.jpg" alt="Anorei Collins">
-                            <figcaption>
-                                Photo by Nicolas I
-                            </figcaption>
-                        </figure>
-                        <figure class="shadow">
-                            <img src="img/sajad-nori-unsplash_img9.jpg" alt="Anorei Collins">
-                            <title>
-                                Photo by Sajad Nori
-                            </title>
-                        </figure>
-                    </div>
-                </div>
-                <div class="player">
-                    <div class="player__btn rwdBtn rwdActive">
-                        <div class="btn"><</div>
-                    </div>
-                    <div class="player__btn stopBtn">
-                        <div class="btn"><span class="stop"></span></div>
-                    </div>
-                    <div class="player__btn pauseBtn">
-                        <div class="btn">II</div>
-                    </div>
-                    <div class="player__btn fwdBtn fwdActive">
-                        <div class="btn">></div>
-                    </div>
-                </div>
-        </Section>
-        <br>
-        <button>Show</button>
-        <section class="imgSlider">
-            <div class="h2Headers">
-               
-                <h2>Image Slider</h2>
-               
-            </div>
-            <div class="imgContainer">
-                <div class="slide current">
-                        <div class="content">
-                            <h2>Slide 1</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, excepturi!</p>
-                        </div>
-                </div>
-            
-                <div class="slide">
-                        <div class="content">
-                            <h2>Slide 2</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, excepturi!</p>
-                        </div>
-                </div>
-            
-                <div class="slide">
-                        <div class="content">
-                            <h2>Slide 3</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, excepturi!</p>
-                        </div>
-                </div>
-            
-                <div class="slide">
-                        <div class="content">
-                            <h2>Slide 4</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, excepturi!</p>
-                        </div>
-                </div>
-            
-                <div class="slide">
-                        <div class="content">
-                            <h2>Slide 5</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, excepturi!</p>
-                        </div>
-                </div>
-            
-                <div class="slide">
-                        <div class="content">
-                            <h2>Slide 6</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, excepturi!</p>
-                        </div>
-                </div>
-            
-                <div class="slide">
-                        <div class="content">
-                            <h2>Slide 7</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, excepturi!</p>
-                        </div>
-                </div>     
-            </div>
-            <div class="buttons">
-                <button  class="btn" id="prevBtn">
-                    <span class="prev"></span>
-                </button>
-                <button  class="btn" id="nextBtn">
-                    <span class="next"></span>
-                </button>
-            </div>
-        
-        </section>  
-        <br>  
-        <button>Show</button>    
-        <section class="imgGallery">
-            <div class="h2Headers">
-                
-                <h2>Image Gallery</h2>
-               
-            </div>
-            <div class="galleryContainer">
-                <div class="featureImg">
-                    <img src="img/Blueprints/sample_bluePrint_img1.jpg" alt="Img1" id="currentImg">
-                </div>
-                <div class="galleryGrid">
-                    <img src="img/Blueprints/sample_bluePrint_img1.jpg" alt="">
-                    <img src="img/Blueprints/sample_bluePrint_img2.jpg" alt="">
-                    <img src="img/Blueprints/sample_bluePrint_img3.jpg" alt="">
-                    <img src="img/Blueprints/Sample-Architecture_plan.jpg" alt="">
-                    <img src="img/Blueprints/a03_plans_leitch_bentor_final-003-main-floor-plan-11.jpg" alt="">
-                    <img src="img/Blueprints/download.jpg" alt="">
-                    <img src="img/Blueprints/Barnett_Concept_P1.jpg" alt="">
-                    <img src="img/Blueprints/Improvement-5-Sample-Sewer-Plan.jpg" alt="">
-                </div>
-
-            
-            </div>
-        </section>
-        <br>
-        <button>Show</button>
-        <section class="imgProductGallery">
-            <div class="h2Headers">
-                <div class="h2-outsideBoxL"></div>
-                <div class="h2-midchevronL"></div>
-                <div class="h2-chevronL"></div>
-                <h2>Product Slider</h2>
-                <div class="h2-chevronR"></div>
-                <div class="h2-midchevronR"></div>
-                <div class="h2-outsideBoxR"></div>
-            </div>
-            <div class="productSlider">
-                <div class="productFeatureImg">
-                    <img id="productFeature" src="img/Anorei_Collins_img_1.jpg" alt="">
-                </div>
-                <div id="productContainer">
-                    <div id="btnL">
-                    </div>
-                    <div id="productImgs" class="productImgs">
-                        <img class="productImg activeProduct" src="img/Anorei_Collins_img_1.jpg"   alt="">
-                        <img class="productImg" src="img/Anorei_Collins_img_2.jpg" alt="">
-                        <img class="productImg" src="img/Anorei_Collins_img_3.jpg" alt="">
-                        <img class="productImg" src="img/Anorei_Collins_img_4.jpg" alt="">
-                        <img class="productImg" src="img/Anorei_Collins_img_5.jpg" alt="">
-                        <img class="productImg" src="img/Anorei_Collins_img_6.jpg" alt="">
-                        <img class="productImg" src="img/Anorei_Collins_img_7.jpg" alt="">
-                        <img class="productImg" src="img/Anorei_Collins_img_8.jpg" alt="">
-                    </div>
-                    <div id="btnR">
-                    </div>
-                </div>
-            </div>
-        </section>
-        <br>
-        <section>
-            <button>Show</button>
-            <div class="project-4 project">
-                <div>
-                    <h2>Project 4</h2>
-                </div>
-            </div>
-        </section>
-    </main>
 </body>
+
 </html>
