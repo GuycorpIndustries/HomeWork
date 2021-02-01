@@ -1,22 +1,27 @@
-.banner {
+.mainBanner {
   position: relative;
   height: 25vw;
   min-height: 250px;
   clip-path: polygon(0 0, 100% 0, 100% calc(100% - 7vw), 0 100%);
   margin-bottom: -7vw;
-  background-color: var(--secondaryClr);
   background-image: url("img/header_background_2.png");
   background-size: cover;
-  border-top: 3px solid var(--primaryTxtClr);
+  border-bottom: 3px solid Var(--primaryBackground);
+  background-color: white;
   z-index: 1;
-  .headerBackground {
+  .banner {
     position: absolute;
-    width: 100%;
+    bottom: calc(7vw - 0.75rem);
+    right: 5%;
+    transform: rotate(-3.8deg);
+    font-size: calc(1.5vw + 1.5rem);
+    font-family: "Audiowide", cursive;
+    color: var(--primaryBackground);
   }
   .logo-bar__img {
     position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    top: 5%;
+    right: 5%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -25,62 +30,44 @@
       width: calc(4vw + 4rem);
     }
   }
-  .logo {
-    .h1Name {
-      position: absolute;
-      bottom: calc(7vw - 0.5rem);
-      right: 5%;
-      transform: rotate(-3.8deg);
-      font-size: calc(1.5vw + 1.5rem);
-      font-family: "Audiowide", cursive;
-      color: var(--primaryBackground);
-    }
-    .techIcon {
-      position: absolute;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      top: calc(1.5vw + 1.75rem);
-      left: calc(1vw + 1.5rem);
-      border-radius: 1rem;
-      width: calc(9vw + 9rem);
-      height: calc(5vw + 5rem);
-      font-family: "Audiowide", cursive;
-      border: 5px double var(--primaryBackground);
-      p {
-        position: absolute;
-        font-size: 1.5rem;
-        color: var(--primaryBackground);
-        letter-spacing: 0.15rem;
-      }
-      .techIconTop {
-        top: -40px;
-        left: 50%;
-        transform: translateX(-50%);
-      }
-      .techIconBottom {
-        left: 50%;
-        transform: translateX(-50%);
-        bottom: -40px;
-      }
-      img {
-        margin: 10px 0;
-        transform: rotate(90deg);
-        width: calc(4.25vw + 4.25rem);
-        height: calc(4.25vw + 4.25rem);
-        border: 2px solid var(--primaryBackground);
-        border-radius: 50%;
-      }
-    }
-  }
-  .nav__bar {
+}
+
+.logo {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  top: calc(1.5vw + 1.75rem);
+  left: calc(1vw + 1.5rem);
+  border-radius: 1rem;
+  width: calc(9vw + 9rem);
+  height: calc(5vw + 5rem);
+  font-family: "Audiowide", cursive;
+  border: 5px double var(--primaryBackground);
+  p {
     position: absolute;
-    top: 5%;
-    right: 5%;
-    .navList {
-      color: red;
-    }
+    font-size: 1.5rem;
+    color: var(--primaryBackground);
+    letter-spacing: 0.15rem;
+  }
+  &__top {
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  &__bottom {
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -40px;
+  }
+  &__img {
+    margin: 10px 0;
+    transform: rotate(90deg);
+    width: calc(4.25vw + 4.25rem);
+    height: calc(4.25vw + 4.25rem);
+    border: 2px solid var(--primaryBackground);
+    border-radius: 50%;
   }
 }
 
@@ -97,6 +84,16 @@
   top: calc(3vw + 3rem);
   left: 50%;
   transform: translateX(-50%);
-  color: var(--secondaryClr);
+  color: white;
   font-size: calc(2vw + 2rem);
+  font-family: "Audiowide", cursive;
+}
+
+@media (max-width: 720px) {
+  .logo {
+    display: none;
+  }
+  .mainHeader h1 {
+    margin: auto;
+  }
 }
