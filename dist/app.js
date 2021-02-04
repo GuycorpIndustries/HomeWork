@@ -1,2 +1,2 @@
-import Header from '../js/header.js'
+import Header from './js/header.js'
 Header();
