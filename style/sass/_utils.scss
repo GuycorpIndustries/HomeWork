@@ -1,0 +1,41 @@
+// Style Layouts
+
+
+.navBar-container {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.navBar {
+  width: 60vw;
+  padding: 0.5rem;
+  margin: auto;
+  clip-path: polygon(0% 0%, 100% 0%, 85% 100%, 15% 100%);
+  background-color: var(--secondaryClrOp);
+  &__list {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1.6px solid var(--primaryBackground);
+    li {
+      border-right: 1.6px solid var(--primaryBackground);
+      margin: 4px 0;
+      padding: 0.5rem 1rem;
+    }
+    li a {
+      display: block;
+      text-decoration: none;
+      color: var(--primaryBackground);
+      letter-spacing: 0.1rem;
+      font-weight: 600;
+    }
+    li a:hover {
+      color: orangered;
+    }
+  }
+  &__list li:last-child {
+    border-right: none;
+  }
+}

@@ -1,0 +1,37 @@
+.btn {
+  cursor: pointer;
+  width: 125px;
+  height: 30px;
+  background-color: green;
+  letter-spacing: 0.1rem;
+}
+.btn:hover {
+  transform: scale(1.1);
+}
+.btn-caution {
+  background-color: yellow;
+}
+.btn-danger {
+  background-color: orangered;
+}
+.btn-active {
+  opacity: 0.7;
+}
+.btn-smRnd {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+.btn-lgRnd {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+}
+.btn-rndCorner {
+  border-radius: 1rem;
+}
+.active {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 10px black;
+  border: none;
+}

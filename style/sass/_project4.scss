@@ -1,0 +1,238 @@
+.project4{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.card-container {
+  position: relative;
+  background-color: rgb(194, 194, 194);
+  width: 300px;
+  height: 250px;
+  margin: 5% auto;
+  border: 3px solid white;
+  border-radius: 1.75rem 1.75rem 0.75rem 0.75rem;
+  box-shadow: 0px 0px 10px whitesmoke;
+  .card {
+    h1 {
+      position: absolute;
+      width: 100%;
+      font-size: calc(0.75vw + 1rem);
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .btn {
+      position: absolute;
+      width: auto;
+      background: none;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%);
+      cursor: pointer;
+      .line {
+        background-color: black;
+        width: 80px;
+        height: 6px;
+        border-radius: 1rem;
+      }
+      .lineTop {
+        transform: translateY(-5px);
+      }
+      .lineCenter {
+        background-color: aqua;
+      }
+      .lineBottom {
+        transform: translateY(5px);
+      }
+    }
+  }
+  .menu5B-items{
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+  }
+}
+
+#menu2-btn .lineTop {
+  transform: translateY(-5px);
+}
+
+#menu2-btn .lineCenter {
+  background-color: orange;
+}
+
+#menu2-btn .lineBottom {
+  transform: translateY(5px);
+}
+
+#menu3-btn .lineTop {
+  transform: translateY(-5px);
+}
+
+#menu3-btn .lineBottom {
+  transform: translateY(5px);
+}
+
+.menuClicked .lineTop {
+  height: 6px;
+  transform: translateY(8.5px) rotate(45deg);
+}
+
+.menuClicked .lineBottom {
+  height: 6px;
+  transform: translateY(-8.5) rotate(-45deg);
+}
+
+.menuClicked .lineCenter {
+  opacity: 0;
+}
+
+.menuClicked.header3 {
+  background-color: aqua;
+  transition: all 300ms ease-in-out;
+}
+
+.navBar2 {
+  position: relative;
+  height: 60px;
+  .navBar2-menu {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 2%;
+    right: 1%;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border: 2px solid var(--primaryTxtClr);
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+    transition: all 0.5s ease-in-out;
+    &__btn {
+      position: absolute;
+      width: 30px;
+      height: 4px;
+      border-radius: 5px;
+      background-color: var(--primaryBackground);
+    }
+    &__btn::after,
+    &__btn::before {
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 4px;
+      border-radius: 25%;
+      background-color: var(--primaryTxtClr);
+      transition: all 0.5s ease-in-out;
+    }
+    &__btn::before {
+      transform: translateY(-10px);
+    }
+    &__btn::after {
+      transform: translateY(10px);
+    }
+  }
+}
+
+.navBar2-list {
+  margin: var(--spacer);
+  .listItem {
+    display: grid;
+    align-items: center;
+    font-family: "audiowide", cursive;
+    font-size: calc(0.5vw + 1rem);
+    border: 2px solid var(--primaryTxtClr);
+    border-radius: 1rem;
+    background-color: var(--secondaryClrOp);
+    box-shadow: 0px 0px 30px rgb(0, 0, 0);
+    width: calc(6.5vw + 6.5rem);
+    text-align: center;
+    letter-spacing: 0.25rem;
+  }
+  &__home {
+    position: absolute;
+    top: 20%;
+    right: 8%;
+  }
+  &__about {
+    position: absolute;
+    top: 30%;
+    right: 17%;
+  }
+  &__projects {
+    position: absolute;
+    top: 40%;
+    right: 26%;
+  }
+  a {
+    color: var(--primaryBackground);
+    width: 100%;
+    height: calc(1vw + 1.2rem);
+    display: block;
+    text-decoration: none;
+  }
+
+  .listItem:hover {
+    box-shadow: 0px 0px 20px var(--secondaryClr);
+  }
+  .active a {
+    width: 100%;
+    font-weight: 600;
+    box-shadow: 0px 0px 30px var(--primaryBackground);
+    color: var(--primaryTxtClr);
+    border-radius: 1rem;
+    text-shadow: 0px 0px 10px var(--secondaryClr);
+  }
+}
+
+// NAVBAR ANIMATION WITH JS SCRIPT
+
+// HIDE AND SHOW LIST
+.navBar2-list .listItem {
+  display: none; // hide
+}
+.openNav ~ .navBar2-list .listItem {
+  /* NEW CLASS FROM JS */
+  display: block; // show
+}
+
+// ANIMATION TRIGGER SELECTORS WITH EVENT CLASS ADDED FROM JS SCRIPT
+.navBar2-menu.openNav .navBar2-menu__btn {
+  background: transparent;
+  box-shadow: none;
+}
+.navBar2-menu.openNav .navBar2-menu__btn::before {
+  transform: rotate(45deg);
+  background-color: red;
+}
+.navBar2-menu.openNav .navBar2-menu__btn::after {
+  transform: rotate(-45deg);
+  background-color: red;
+}
+
+// NAVBAR KEYFRAMES
+.openNav {
+  perspective: 1000px;
+  ~ .navBar2-list .listItem {
+    opacity: 0;
+    transform-origin: top right;
+  }
+  @for $i from 1 through 4 {
+    ~ .navBar2-list .listItem:nth-child(#{$i}) {
+      animation: navBarAn 300ms ease-in forwards;
+      animation-delay: (150ms * $i) - 300ms;
+    }
+  }
+}
+@keyframes navBarAn {
+  0% {
+    opacity: 0;
+    transform: rotateY(90deg) translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: rotateY(0deg) translateY(0px);
+  }
+}

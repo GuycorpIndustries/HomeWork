@@ -1,0 +1,252 @@
+.project1 {
+  width: 95vw;
+  margin: auto;
+  background-color: lightgrey;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0px 0px 10px black;
+  margin-bottom: 100px;
+  h2 {
+    padding-top: 50px;
+    font-size: calc(2vw + 1rem);
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  p {
+    margin-bottom: 5px;
+  }
+  .p1wrapper1 {
+    margin-bottom: 50px;
+    padding: 2rem;
+  }
+  &__container1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    padding: 3rem;
+    gap: 50px;
+    margin: auto;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 0.75rem 0.75rem 0 0;
+    &__item1:hover .hoverBox {
+      translate: 100%;
+    }
+    &__item2 .hoverBox {
+      transition: translate 1s ease-in-out;
+    }
+    &__item2:hover .hoverBox {
+      translate: 100%;
+    }
+    &__item3:hover .hoverBox {
+      animation: aquarnd 1.5s ease-in-out forwards;
+    }
+    &__item {
+      margin: auto;
+      height: 300px;
+      width: 300px;
+      cursor: pointer;
+      background-color: var(--primaryBackground);
+      margin-bottom: 20px;
+      .hoverBox {
+        width: 50%;
+        height: 50%;
+        background-color: coral;
+      }
+    }
+    h3 {
+      text-align: center;
+    }
+  }
+  .p1wrapper2 {
+    margin-bottom: 50px;
+    padding: 2rem;
+  }
+  &__container2 {
+    margin: auto;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 0.75rem 0.75rem 0 0;
+    overflow: hidden;
+    h3 {
+      text-align: center;
+    }
+    &__item1 {
+      overflow: hidden;
+      cursor: pointer;
+      max-width: 600px;
+      height: 500px;
+      margin: auto;
+      background-color: var(--primaryBackground);
+      border-radius: 0.5rem;
+      margin-bottom: 30px;
+      .ninjaBox {
+        overflow: hidden;
+        margin: auto;
+        width: 300px;
+        height: 150px;
+        top: 160px;
+        transform-origin: 20px 175px;
+        background-color: white;
+        border-radius: 0.5rem;
+        opacity: 0;
+        .ninjaBox__header {
+          display: grid;
+          grid-template-columns: 30px auto 30px;
+          background-color: coral;
+          padding: 0.25rem;
+          .screw {
+            width: 18.75px;
+            height: 18.75px;
+            margin: auto;
+            color: black;
+            text-align: center;
+            background-color: silver;
+            border-radius: 50%;
+          }
+        }
+        h4 {
+          padding: 0.5rem;
+          opacity: 0;
+        }
+        p {
+          font-size: 3rem;
+          text-align: right;
+          font-weight: 700;
+          letter-spacing: 0.1rem;
+          padding-right: 1rem;
+          padding-top: 1.5rem;
+          opacity: 0;
+        }
+      }
+    }
+  }
+  &__container2__item1:hover .ninjaBox {
+    animation: drop 750ms ease-in forwards, swing 2.25s ease-in-out 2s forwards, fall 300ms 4.75s linear forwards;
+    opacity: 1;
+    &__header .screw {
+      animation: spin 650ms linear forwards 1s;
+    }
+    h4 {
+      animation: quality 500ms 600ms ease-in-out forwards;
+    }
+    p {
+      animation: counts 3.25s ease-in forwards;
+    }
+  }
+  .tributeBox {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+    padding: 2rem;
+    background-color: grey;
+    border-radius: 0 0 0.75rem 0.75rem;
+    &__video {
+      width: 400px;
+      height: 225px;
+      video {
+        width: 100%;
+        height: 100%;
+        border-radius: 0.5rem;
+      }
+    }
+  }
+}
+
+@keyframes aquarnd {
+  0% {
+    transform: translateY(0) translateX(0);
+  }
+  25% {
+    transform: translateY(100%) translateX(0);
+  }
+  50% {
+    background-color: aqua;
+    border-radius: 50%;
+  }
+  75% {
+    transform: translateY(100%) translateX(100%);
+  }
+  100% {
+    transform: translateY(0%) translateX(100%);
+  }
+}
+
+// Net Ninja Project
+
+@keyframes drop {
+  0% {
+    transform: translateY(-100px);
+  }
+  60% {
+    transform: translateY(160px);
+  }
+  90% {
+    transform: translateY(150px);
+  }
+  100% {
+    transform: translateY(160px);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(600deg);
+  }
+}
+
+@keyframes swing {
+  0% {
+    transform: rotateZ(0deg) translateY(160px);
+  }
+  2% {
+    transform: rotateZ(1deg) translateY(160px);
+  }
+  10% {
+    transform: rotateZ(2deg) translateY(160px);
+  }
+  15% {
+    transform: rotateZ(5deg) translateY(160px);
+  }
+  20% {
+    transform: rotateZ(8deg) translateY(160px);
+  }
+  70% {
+    transform: rotateZ(70deg) translateY(160px);
+  }
+  100% {
+    transform: rotateZ(60deg) translateY(160px);
+  }
+}
+@keyframes fall {
+  0% {
+    transform: rotateZ(60deg) translateY(160px);
+  }
+  100% {
+    transform: translateY(600px) translateX(-30px);
+  }
+}
+@keyframes quality {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(20px);
+    opacity: 1;
+  }
+}
+@keyframes counts {
+  0% {
+    transform: translateY(50px);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}

@@ -1,0 +1,45 @@
+:root {
+  --primaryBackground: rgb(34, 34, 34);
+  --primaryBackgroundOp: rgba(34, 34, 34, 0.8);
+  --primaryClrDark: rgb(22, 83, 252);
+  --primaryClrMid: rgb(96, 165, 255);
+  --secondaryClr: white;
+  --primaryTxtClr: rgb(22, 83, 252);
+
+  --radialGradePrimary: radial-gradient(rgb(110, 110, 110), rgb(240, 240, 240));
+  --radialGradeSecondary: radial-gradient(
+    rgb(255, 255, 255),
+    rgb(170, 170, 170)
+  );
+  --primaryClrDarkOp: rgba(22, 83, 252, 0.75);
+  --primaryClrMidOp: rgba(96, 165, 255, 0.4);
+  --secondaryClrOp: rgba(255, 255, 255, 0.4);
+  --secondaryClrlgtOp: rgba(255, 255, 255, 0.8);
+
+  --spacer: 0.5rem;
+  --spacer1: 1rem;
+  --spacer2: 2rem;
+  --spacer3: 3rem;
+}
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+    font-family: 'montserrat', cursive;
+}
+.spacer{
+    height: 300px;
+}
+.footer{
+    background-color: var(--primaryBackground);
+    color: white;
+    padding: .25rem .5rem;
+    text-align: center;
+    border-top: 2px solid orangered;
+    border-bottom: 2px solid orangered;
+    margin-bottom: 10px;
+}

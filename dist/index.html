@@ -1,23 +1,436 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Guycorp Industries Projects</title>
-    <link rel="shortcut icon" type="image/png" href="img/favicon2.jpg" />
-    <link rel="stylesheet" href="main.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Audiowide&family=Montserrat:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <script defer src="main.js"></script>
-    <script defer src="header.js"></script>
-  </head>
 
-  <body>
-    <span id="jsHeader"></span>
-    <span id="jsHeaderBottom"></span>
-    <main></main>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Guycorp Industries Projects</title>
+  <link rel="shortcut icon" type="image/png" href="img/favicon2.jpg" />
+  <link rel="stylesheet" href="main.css" />
+  <script type="module" defer src="app.js"></script>
+</head>
+
+<body>
+  <header id="page-header">
+  </header>
+  <main class="main">
+    <div class="navBar-container">
+      <nav class="navBar">
+        <ul class="navBar__list" id="navBar">
+          <li class="navBar__list-item"><a href="#">Home</a></li>
+          <li class="navBar__list-item"><a href="#projects">Projects</a></li>
+          <li class="navBar__list-item"><a href="#project1">Animations</a></li>
+          <li class="navBar__list-item"><a href="#project2">Buttons</a></li>
+          <li class="navBar__list-item"><a href="#project3">Toggle Buttons</a></li>
+          <li class="navBar__list-item"><a href="#project4">5 Burger Menu</a></li>
+        </ul>
+      </nav>
+    </div>
+    <h1 class="projects-header" id="projects">Projects</h1>
+    <article class="projects-article">
+      <p class="projects-article__para">WHY?</p>
+      <picture class="projects-article__img">
+        <img src="img/tech_img/tech_img1.jpg" alt="">
+      </picture>
+    </article>
+    <section class="projects">
+      <h1 id="project1">Animations</h1>
+      <section class="project1">
+        <h2>On Hover</h2>
+        <section class="p1wrapper1">
+          <p>Inspired by Kyle at Web Dev Simplified</p>
+          <div class="project1__container1 project">
+            <div>
+              <div class="project1__container1__item1 project1__container1__item">
+                <div class="hoverBox"></div>
+              </div>
+              <h3>Transform</h3>
+            </div>
+            <div>
+              <div class="project1__container1__item2 project1__container1__item">
+                <div class="hoverBox"></div>
+              </div>
+              <h3>Transition</h3>
+            </div>
+            <div>
+              <div class="project1__container1__item3 project1__container1__item">
+                <div class="hoverBox"></div>
+              </div>
+              <h3>Animation</h3>
+            </div>
+          </div>
+          <div class="tributeBox">
+            <picture class="tributeBox__video">
+              <video controls src="video/Web_Dev_Simplified_Animation.mp4"></video>
+            </picture>
+            <div class="tributeBox__bio">
+              <h3 class="tributeBox__header">Web Dev Simplified</h3>
+              <div class="trubteBox__bio__text">
+                <p>para</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <h2>On Hover</h2>
+        <section class="p1wrapper2">
+          <p>Inspired by the Net Ninja</p>
+          <div class="project1__container2 project">
+            <div>
+              <div class="project1__container2__item1">
+                <div class="ninjaBox">
+                  <div class="ninjaBox__header">
+                    <div class="screw">I</div>
+                    <h3>Guycorp Industries</h3>
+                    <div class="screw">I</div>
+                  </div>
+                  <h4>When Quality</h4>
+                  <p>Counts</p>
+                </div>
+              </div>
+              <h3>Multiple @keyframes</h3>
+            </div>
+          </div>
+          <div class="tributeBox">
+            <picture class="tributeBox__video">
+              <video controls src="video/Net_Ninja_Animation.mp4"></video>
+            </picture>
+            <div class="tributeBox__bio">
+              <h3 class="tributeBox__header">The Net Ninja</h3>
+              <div class="trubteBox__bio__text">
+                <p>para</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+      <h1 id="project2">Buttons</h1>
+      <section class="project2">
+        <h2>"Click Event"</h2>
+        <section class="markNstyleSide sideSection">
+          <h2><span style="color: orangered;">Mark</span> "n" <span style="color: blue;">Style</span></h2>
+          <div class="html">
+            <h3>HTML</h3>
+            <p><span>
+                << /span>button<span>></span></p>
+          </div>
+          <div class="att">
+            <h3>Class Attribute</h3>
+            <p>class = <span>"btn"</span></p>
+          </div>
+          <div class="css">
+            <h3>CSS</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, inventore?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, inventore?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, inventore?</p>
+          </div>
+          <h2><span style="color: yellow;">Logic</span></h2>
+          <div class="jsScript">
+            <h3>JS Script</h3>
+            <p>Lorem ipsum dolor sit amet</p>
+          </div>
+        </section>
+        <section id="btn">
+          <div class="btnClass">
+            <h2>Button Options</h2>
+            <div class="motto">
+              <p>One <span style="color: green; font-weight: 600; letter-spacing: .1rem;">Attribute</span> to Rule them
+                All
+              </p>
+              <div>
+                <span style="font-weight: 600; letter-spacing: .1rem;"><span style="color:green">class
+                  </span><span>=</span><span style="color: orange;"> "btn"</span></span>
+              </div>
+            </div>
+            <div class="btnReg">
+              <h3>Regular Buttons</h3>
+              <div class="btnDiv">
+                <div class="btn-box">
+                  <h3>Class</h3>
+                  <p>btn</p>
+                  <button class="btn btn-reg">Click Me!</button>
+                </div>
+                <div class="btn-box">
+                  <h3>Class</h3>
+                  <pre>
+    btn
+    btn-active
+                </pre>
+                  <button class="btn  btn-reg btn-active">Click Me!</button>
+                </div>
+                <div class="btn-box">
+                  <h3>Class</h3>
+                  <pre>btn</pre>
+                  <p>btn-caution</p>
+                  <button class="btn  btn-reg btn-caution">Click Me!</button>
+                </div>
+                <div class="btn-box">
+                  <h3>Class</h3>
+                  <pre>btn</pre>
+                  <p>btn-danger</p>
+                  <button class="btn  btn-reg btn-danger">Click Me!</button>
+                </div>
+              </div>
+              <h3>Rounded Corners</h3>
+              <div class="btnDiv">
+                <div class="btn-box">
+                  <h3>Class</h3>
+                  <pre>btn</pre>
+                  <p>btn-rndCorner</p>
+                  <button class="btn  btn-reg btn-rndCorner">Click Me!</button>
+                </div>
+                <div class="btn-box">
+                  <h3>Class</h3>
+                  <pre>btn</pre>
+                  <p>btn-active</p>
+                  <p>btn-rndCorner</p>
+                  <button class="btn  btn-reg btn-active btn-rndCorner">Click Me!</button>
+                </div>
+                <div class="btn-box">
+                  <h3>Class</h3>
+                  <pre>btn</pre>
+                  <p>btn-caution</p>
+                  <p>btn-rndCorner</p>
+                  <button class="btn  btn-reg btn-caution btn-rndCorner">Click Me!</button>
+                </div>
+                <div class="btn-box">
+                  <h3>Class</h3>
+                  <pre>btn</pre>
+                  <p>btn-danger</p>
+                  <p>btn-rndCorner</p>
+                  <button class="btn  btn-reg btn-danger btn-rndCorner">Click Me!</button>
+                </div>
+              </div>
+              <div class="btnRnd">
+                <h3>Round Buttons Small</h3>
+                <div class="btnDiv">
+                  <div class="btn-box">
+                    <h3>Class</h3>
+                    <pre>btn</pre>
+                    <p>btn-smRnd</p>
+                    <button class="btn btn-smRnd"></button>
+                  </div>
+                  <div class="btn-box">
+                    <h3>Class</h3>
+                    <pre>btn</pre>
+                    <p>btn-smRnd</p>
+                    <p>btn-active</p>
+                    <button class="btn btn-active btn-smRnd"></button>
+                  </div>
+                  <div class="btn-box">
+                    <h3>Class</h3>
+                    <pre>btn</pre>
+                    <p>btn-smRnd</p>
+                    <p>btn-caution</p>
+                    <button class="btn btn-caution btn-smRnd "></button>
+                  </div>
+                  <div class="btn-box">
+                    <h3>Class</h3>
+                    <pre>btn</pre>
+                    <p>btn-smRnd</p>
+                    <p>btn-danger</p>
+                    <button class="btn btn-danger btn-smRnd"></button>
+                  </div>
+                </div>
+                <h3>Round Buttons Large</h3>
+                <div class="btnDiv">
+                  <div class="btn-box">
+                    <h3>Class</h3>
+                    <pre>
+    btn
+    btn-lgRnd
+                  </pre>
+                    <button class="btn btn-lgRnd"></button>
+                  </div>
+                  <div class="btn-box">
+                    <h3>Class</h3>
+                    <pre>
+    btn
+    btn-lgRnd
+    btn-active
+                  </pre>
+                    <button class="btn btn-active btn-lgRnd"></button>
+                  </div>
+                  <div class="btn-box">
+                    <pre>
+                    btn
+                    btn-lgRnd
+                    btn-caution
+                  </pre>
+                    <button class="btn btn-caution btn-lgRnd "></button>
+                    <h3>ID: btn47</h3>
+                  </div>
+                  <div class="btn-box">
+                    <h3>ID:</h3>
+                    <pre>
+    btn
+    btn-lgRnd
+    btn-danger
+                  </pre>
+                    <button class="btn btn-danger btn-lgRnd"></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+      <h1 id="project3">Toggle Buttons</h1>
+      <section class="project3">
+        <section id="project3">
+          <div id="toggleBtns" class="toggleBtns">
+            <div class="toggle1 toggle-container">
+              <h4>Button Toggle 1</h4>
+              <div class="toggle">
+                <button class="toggle__btn" type="button"></button>
+              </div>
+            </div>
+            <div class="toggle2 toggle-container">
+              <h4>Button Toggle 2</h4>
+              <div class="toggle">
+                <div class="toggle">
+                  <button class="toggle__btn" type="button"></button>
+                </div>
+              </div>
+            </div>
+            <div class="toggle3 toggle-container">
+              <h4>Button Toggle 3</h4>
+              <div class="toggle">
+                <div class="toggle">
+                  <button class="toggle__btn" type="button"></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="toggleInputs" class="toggleBtns toggleInputs">
+            <div class="toggle3 toggle-container">
+              <h4>Checkbox Toggle 1</h4>
+              <div class="toggle toggleInput1">
+                
+                  <input type="checkbox" ><label for=""></label>
+                
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+      <h1 id="project4">5 Burger Menu</h1>
+      <section class="project4">
+        <section id="Plain_Burger">
+          <div class="card-container">
+            <div class="card">
+              <h1>Plain Burger</h1>
+              <div class="btn" id="menu1-btn" onclick="menuClick()">
+                <div class="line lineTop"></div>
+                <div class="line lineCenter"></div>
+                <div class="line lineBottom"></div>
+              </div>
+              <div class="menu5B-items">
+                <ul>
+                  <li>3 Div Selection</li>
+                  <li></li>
+                  <li></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="Cheese_Burger">
+          <div class="card-container">
+            <div class="card">
+              <h1>Cheese Burger</h1>
+              <div class="btn" id="menu2-btn" onclick="menuClick">
+                <div class="line lineTop"></div>
+                <div class="line lineCenter"></div>
+                <div class="line lineBottom"></div>
+              </div>
+              <div class="menu5B-items">
+                <ul>
+                  <li>3 Div Selection</li>
+                  <li></li>
+                  <li></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="Double_Burger">
+          <div class="card-container">
+            <div class="card">
+              <h1>Double Burger</h1>
+              <div class="btn" id="menu3-btn" onclick="menuClick()">
+                <div class="line lineTop"></div>
+                <div class="line lineCenter"></div>
+                <div class="line lineBottom"></div>
+              </div>
+              <div class="menu5B-items">
+                <ul>
+                  <li>3 Div Selection</li>
+                  <li>onClick function ()</li>
+                  <li></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="DoubleCheese_Burger">
+          <div class="card-container">
+            <div class="card">
+              <h1>Double Cheese Burger</h1>
+              <div class="btn" id="menu5-btn">
+                <div class="line lineTop"></div>
+                <div class="line lineCenter"></div>
+                <div class="line lineBottom"></div>
+              </div>
+            </div>
+            <div class="menu5B-items">
+              <ul>
+                <li>3 Div Selection</li>
+                <li></li>
+                <li></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section id="Triple_Burger">
+          <div class="card-container">
+            <div class="card">
+              <h1>Triple Burger</h1>
+              <div class="btn" id="menu6-btn">
+                <div class="line lineTop"></div>
+                <div class="line lineCenter"></div>
+                <div class="line lineBottom"></div>
+              </div>
+              <div class="menu5B-items">
+                <ul>
+                  <li>3 Div Selection</li>
+                  <li></li>
+                  <li></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="navBar2">
+          <div class="navBar2-menu">
+            <div class="navBar2-menu__btn"></div>
+          </div>
+          <ul class="navBar2-list">
+            <li class="navBar2-list__home listItem active">
+              <a class="" href="#mainHeader">Home</a>
+            </li>
+            <li class="navBar2-list__about listItem">
+              <a href="#about">About</a>
+            </li>
+            <li class="navBar2-list__projects listItem">
+              <a href="#projects">Projects</a>
+            </li>
+          </ul>
+        </section>
+      </section>
+    </section>
+  </main>
+  <div class="spacer"></div>
+  <footer class="footer">This is The Footer</footer>
+</body>
+
 </html>

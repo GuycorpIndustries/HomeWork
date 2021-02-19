@@ -1,0 +1,56 @@
+.toggleBtns {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  margin-bottom: 100px;
+  .toggle-container {
+    margin: auto;
+    width: 300px;
+    height: 150px;
+    background-color: lightgrey;
+    border-radius: 1.5rem;
+    h4 {
+      padding: 0.5rem;
+      text-align: center;
+    }
+    .toggle {
+      content: "";
+      position: relative;
+      width: 200px;
+      height: 100px;
+      margin: auto;
+      background-color: var(--primaryBackground);
+      border-radius: 100px;
+      &__btn {
+        position: absolute;
+        width: 90px;
+        height: 90px;
+        top: 5px;
+        left: 5px;
+        border-radius: 50%;
+      }
+    }
+  }
+}
+
+.toggleInputs {
+  .toggle-container {
+    .toggleInput1 {
+
+        input[type="checkbox"] {
+            border-radius: 50%;
+          width: 90px;
+          height: 90px;
+          border: none;
+          outline: none;
+        }
+        label{
+            content: "";
+          border-radius: 50%;
+          width: 90px;
+          height: 90px;
+          border: none;
+
+      }
+    }
+  }
+}
