@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 :root {
   --primaryBackground: rgb(34, 34, 34);
   --primaryBackgroundOp: rgba(34, 34, 34, 0.8);
@@ -42,4 +43,25 @@ body{
     border-top: 2px solid orangered;
     border-bottom: 2px solid orangered;
     margin-bottom: 10px;
+=======
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Audiowide', cursive;
+}
+
+:root{
+    --primaryBackground: rgb(34, 34, 34);
+    --primaryClrDark: black;
+    --primaryClrMid: grey;
+    --secondaryClr: white;
+
+    --radialGradePrimary: radial-gradient( rgb(110, 110, 110), rgb(240, 240, 240));
+    --radialGradeSecondary: radial-gradient(rgb(255, 255, 255), rgb(170, 170, 170));
+    --primarClrDarkOp: rgba(0, 0, 0, .8);
+    --secondaryClrOp: rgba(255, 255, 255, 0.6);
+>>>>>>> 1d69676495c86207c7f1afd682fcfecc159dbcc7
 }

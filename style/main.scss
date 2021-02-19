@@ -1,8 +1,21 @@
 @import './sass/global';
-@import './sass/utils';
-@import './sass/sideSec';
-@import './sass/projects';
-@import './sass/project1';
-@import './sass/project2';
-@import './sass/project3';
-@import './sass/project4';
+
+
+/*             Right Chevron Thick
+clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+
+                Right Chevron Thin
+clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 50% 100%, 75% 50%, 50% 0);
+*/
+
+/*             left Chevron Thick
+clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+                Left Chevron Thin
+clip-path: polygon(50% 0, 25% 50%, 50% 100%, 25% 100%, 0% 50%, 25% 0%);
+*/
+
+/*             left Triangle
+clip-path: polygon(50% 0%, 50% 50%, 50% 100%, 0% 50%);
+                Right Triangle
+clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 50% 50%);
+*/
