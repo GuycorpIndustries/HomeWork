@@ -1,3 +1,4 @@
+
 const pageHeader = document.getElementById("page-header");
 
 function topBanner() {
@@ -127,9 +128,11 @@ function titleSection() {
   let title = document.createElement("h2");
   let sectionTitle = document.createElement("section");
 
-  title.appendChild(document.createTextNode('"The Program"'));
+  title.appendChild(document.createTextNode('"Projects"'));
   title.style.color = "orangered";
   title.style.position = "absolute";
+  title.style.width = "100%";
+  title.style.textAlign = "center";
   title.style.top = "calc(3vw + 3rem)";
   title.style.left = "50%";
   title.style.transform = "translateX(-50%)";
@@ -143,7 +146,6 @@ function titleSection() {
   sectionTitle.style.width = "100%";
   sectionTitle.style.backgroundColor = "var(--primaryBackground)";
   sectionTitle.style.borderBottom = "3px solid orangeRed";
-  sectionTitle.style.marginBottom = "calc(2.5vw + 2.5rem)";
 
   pageHeader.appendChild(sectionTitle);
 }
