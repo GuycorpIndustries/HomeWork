@@ -1,23 +1,23 @@
 {
-  "name": "projects",
+  "dependencies": {
+    "gh-pages": "^3.1.0"
+  },
+  "name": "homework",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
+  "devDependencies": {},
   "scripts": {
     "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/GuycorpIndustries/Projects.git"
+    "url": "git+https://github.com/GuycorpIndustries/HomeWork.git"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/GuycorpIndustries/Projects/issues"
+    "url": "https://github.com/GuycorpIndustries/HomeWork/issues"
   },
-  "homepage": "https://GuycorpIndustries.github.io/Projects",
-  "dependencies": {
-    "gh-pages": "^3.1.0"
-  }
+  "homepage": "https://github.com/GuycorpIndustries/HomeWork",
+  "description": ""
 }
